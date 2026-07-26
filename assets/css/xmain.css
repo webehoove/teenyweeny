@@ -7,7 +7,7 @@
 	z-index: 4;
 }
 .scrolled {
-	background-color: rgba(255, 255, 255, 1);
+	background-color: rgba(250, 248, 246, 1);
 	transition: 0.3s;
 }
 .logotype_lockup_t {
@@ -119,6 +119,9 @@ ul.goup li {
 .offdesk, .offdesk_title, .offdesk_all, .off_news_desk {
 	display: none;
 }
+.off_desk {
+	display: none;
+}
 }
  @media screen and (max-width: 1366px) {
 .logotype_lockup {
@@ -136,7 +139,7 @@ ul.goup li {
 }
 #logotype_sym {
 	position: relative;
-	width: 8rem;
+	width: 10rem;
 	float: left;
 	top: -0.25rem;
 	left: 0;
@@ -207,7 +210,7 @@ ul li .logotype_wm_db {
 }
  @media screen and (max-width: 768px) {
 #logotype_sym {
-	width: 8rem;
+	width: 9rem;
 	top: -0.1rem;
 }
 #logotype_wm {
