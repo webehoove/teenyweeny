@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1_copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1600 1600" style="enable-background:new 0 0 1600 1600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BB73EA;}
+	.st1{fill:#F74354;}
+	.st2{fill:#FF5A72;}
+	.st3{fill:#BC0024;}
+	.st4{fill:#FFB8D5;}
+	.st5{fill:#7A32A5;}
+	.st6{fill:#D7BDFF;}
+	.st7{fill:#FCF0FF;}
+	.st8{fill:#12753A;}
+	.st9{fill:#31AD63;}
+	.st10{fill:#86EFB0;}
+	.st11{fill:#55CE86;}
+	.st12{fill:#1E3C68;}
+	.st13{fill:#3775B4;}
+	.st14{fill:#A6D9FF;}
+	.st15{fill:#DEEBFF;}
+</style>
+<rect class="st0" width="1600" height="1600"/>
+<g>
+	<rect x="800" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 2400 851.9382)" class="st1" width="800" height="851.938"/>
+	<path class="st2" d="M800,0h400v446.161c0,82.843-67.157,150-150,150H800V0z"/>
+	<rect x="1200" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 2800 400)" class="st3" width="400" height="400"/>
+	<path class="st4" d="M1200,101.92h50c82.843,0,150,67.157,150,150V400h-200V101.92z"/>
+</g>
+<g>
+	<path class="st0" d="M800,0v800H0V150C0,67.157,67.157,0,150,0H800z"/>
+	<path class="st5" d="M800,0v400H353.839c-82.843,0-150-67.157-150-150V0H800z"/>
+	
+		<rect x="400" y="400" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -1.039230e-04 1200)" class="st6" width="400" height="400"/>
+	<path class="st7" d="M698.08,400v50c0,82.843-67.157,150-150,150H400V400H698.08z"/>
+</g>
+<g>
+	
+		<rect x="851.938" y="851.938" transform="matrix(4.489482e-11 -1 1 4.489482e-11 1.864696e-05 2451.9382)" class="st8" width="748.062" height="748.062"/>
+	<path class="st9" d="M851.938,851.938v374.031h417.195c77.464,0,140.262-62.797,140.262-140.262V851.938H851.938z"/>
+	
+		<rect x="851.938" y="1225.969" transform="matrix(4.489748e-11 -1 1 4.489748e-11 -374.0309 2451.9382)" class="st10" width="374.031" height="374.031"/>
+	<path class="st11" d="M947.241,1225.969v46.754c0,77.464,62.797,140.262,140.262,140.262h138.466v-187.016H947.241z"/>
+</g>
+<g>
+	<path class="st12" d="M1003.839,1600H0V596.161h815.62c103.951,0,188.22,84.269,188.22,188.22V1600z"/>
+	<path class="st13" d="M1003.839,1600H501.92v-559.842c0-103.951,84.269-188.22,188.22-188.22h313.7V1600z"/>
+	<rect y="1098.08" class="st14" width="501.92" height="501.92"/>
+	<path class="st15" d="M501.92,1472.111h-62.74c-103.951,0-188.22-84.269-188.22-188.22V1098.08h250.96V1472.111z"/>
+</g>
+</svg>
