@@ -515,13 +515,13 @@
 }
 .row {
 	margin-top: 0;
-	margin-left: -1.75rem;
+	margin-left: -1.5rem;
 }
 .row > * {
-	padding: 1.75rem 0 0 1.75rem;
+	padding: 1.5rem 0 0 1.5rem;
 }
 .row.gtr-uniform {
-	margin-top: -1.75rem;
+	margin-top: -1.5rem;
 }
 .row.gtr-uniform > * {
 	padding-top: 0;
