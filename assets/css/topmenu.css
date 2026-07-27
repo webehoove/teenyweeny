@@ -5,7 +5,7 @@
 	right: -100%;
 	height: 100%;
 	width: 100%;
-	background: rgba(255, 255, 255, 1);
+	background: rgba(250, 244, 242, 1);
 	transition: all 0.6s ease-in-out;
 	z-index: 4;
 	overflow: hidden;
@@ -90,7 +90,7 @@
 	position: absolute;
 	top: 0;
 	width: 60%;
-	border-bottom: 2px solid rgba(20, 28, 40, 1);
+	border-bottom: 2px solid rgba(31, 42, 63, 1);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btn:before {
@@ -141,7 +141,7 @@
 }
 .wrapper_menu ul {
 	position: relative;
-	top: 6.5rem;
+	top: 7rem;
 	left: 1rem;
 	padding: 0 0 1rem 0;
 	margin-right: 0;
