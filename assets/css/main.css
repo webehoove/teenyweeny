@@ -213,7 +213,7 @@ html {
 }
 body {
 	background-color: rgba(250, 244, 242, 1);
-	color: rgba(31, 42, 63, 1);
+	color: rgba(30, 60, 104, 1);
 }
 body, input, select, textarea {
 	font-family: "TWE Md", Helvetica, sans-serif;
@@ -954,11 +954,11 @@ button.primary:hover, .button.primary:hover {
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.primary:active, .button.primary:active {
-	background-color: rgba(70, 130, 250, 1);
+	background-color: rgba(55, 117, 180, .1);
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.secondary, .button.secondary {
-	background-color: rgba(247, 67, 84, 1);
+	background-color: rgba(0, 0, 0, 1);
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.secondary:hover, .button.secondary:hover {
