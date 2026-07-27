@@ -21,37 +21,49 @@
 	font-family: 'TWE T XBb';
 	font-weight: normal;
 	font-style: normal;
+	font-display: block;
 	src: url(../webfonts/twe_sans_title/TWE-TravelsNext-XBd.woff2) format('woff2'), url(../webfonts/twe_sans_title/TWE-TravelsNext-XBd.woff) format('woff');
+}
+@font-face {
+	font-family: 'TWE T Blk';
+	font-weight: normal;
+	font-style: normal;
+	src: url(../webfonts/twe_sans_title/TWE-TravelsNext-Black.woff2) format('woff2'), url(../webfonts/twe_sans_title/TWE-TravelsNext-Black.woff) format('woff');
 }
 /*___________Text______________*/
 @font-face {
 	font-family: 'TWE Lt';
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 	src: url(../webfonts/twe_sans_text/TWE-Travels-Text-Light.woff2) format('woff2'), url(../webfonts/twe_sans_text/TWE-Travels-Text-Light.woff) format('woff');
 }
 @font-face {
 	font-family: 'TWE Rg';
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 	src: url(../webfonts/twe_sans_text/TWE-Travels-Text-Regular.woff2) format('woff2'), url(../webfonts/twe_sans_text/TWE-Travels-Text-Regular.woff) format('woff');
 }
 @font-face {
 	font-family: 'TWE Md';
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 	src: url(../webfonts/twe_sans_text/TWE-Travels-Text-Medium.woff2) format('woff2'), url(../webfonts/twe_sans_text/TWE-Travels-Text-Medium.woff) format('woff');
 }
 @font-face {
 	font-family: 'TWE Db';
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 	src: url(../webfonts/twe_sans_text/TWE-Travels-Text-DemiBold.woff2) format('woff2'), url(../webfonts/twe_sans_text/TWE-Travels-Text-DemiBold.woff) format('woff');
 }
 @font-face {
 	font-family: 'TWE Bd';
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 	src: url(../webfonts/twe_sans_text/TWE-Travels-Text-Bold.woff2) format('woff2'), url(../webfonts/twe_sans_text/TWE-Travels-Text-Bold.woff) format('woff');
 }
 /*___________Numbers______________*/
@@ -79,6 +91,27 @@
 	font-weight: normal;
 	font-style: normal;
 	src: url(../webfonts/twe_text_and_play/TWE-T-A-P.woff) format('woff');
+}
+/*___________AnimationText______________*/
+.animate-text-on-load {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: none;
+}
+.animate-text-on-load.font-is-ready {
+  font-family: 'TWE T XBb', sans-serif;
+  
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -278,6 +311,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	letter-spacing: -0.04em;
 	font-feature-settings: "ss01" 1, "ss08" 1;
 }
+.blk_tt {
+	font-family: 'TWE T Blk', Helvetica, sans-serif;
+	font-weight: normal;
+	letter-spacing: -0.04em;
+	font-feature-settings: "ss01" 1, "ss08" 1;
+}
 .lt_tx {
 	font-family: 'TWE Lt', Helvetica, sans-serif;
 	font-weight: normal;
@@ -376,6 +415,10 @@ h1.special_one {
 	font-size: 5.75rem;
 	line-height: 1;
 }
+h1.special_shift {
+	font-size: 5rem;
+	line-height: 0.8;
+}
 h2 {
 	font-size: 2.5rem;
 	line-height: 1.25;
@@ -385,15 +428,15 @@ h2 {
 	line-height: 1.1;
 }
 h3 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	line-height: 1.25;
 }
 h3.special {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	line-height: 1.15;
 }
 h4 {
-	font-size: 1.35rem;
+	font-size: 1.5rem;
 	line-height: 1.2;
 }
 h5 {
@@ -487,6 +530,9 @@ hr.lineer_zero {
 h1.special_one {
 	font-size: 5rem;
 }
+h1.special_shift {
+	font-size: 4.75rem;
+}
 hr {
 	border: 0;
 	margin: 0.75rem 0;
@@ -502,6 +548,9 @@ h1.special_banner {
 h1.special {
 	font-size: 3.15rem;
 }
+h1.special_shift {
+	font-size: 4rem;
+}
 }
  @media screen and (max-width: 820px) {
 h1 {
@@ -514,8 +563,15 @@ h1.special_banner {
 	font-size: 3rem;
 	line-height: 1;
 }
+h1.special_shift {
+	font-size: 3.5rem;
+	line-height: 0.8;
+}
 h2 {
 	font-size: 2rem;
+}
+h4 {
+	font-size: 1.35rem;
 }
 hr {
 	margin: 0.5rem 0;
@@ -535,12 +591,16 @@ h1.special_banner {
 	line-height: 1;
 }
 h1.special {
-	font-size: 2.75rem;
+	font-size: 2.5rem;
 	line-height: 1;
 }
 h1.special_one {
 	font-size: 2.4rem;
 	line-height: 1;
+}
+h1.special_shift {
+	font-size: 2.75rem;
+	line-height: 0.8;
 }
 h2 {
 	font-size: 2rem;
@@ -555,7 +615,7 @@ h3 {
 	line-height: 1.2;
 }
 h3.special {
-	font-size: 1.45rem;
+	font-size: 1.35rem;
 	line-height: 1.15;
 }
 h4 {
