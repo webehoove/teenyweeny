@@ -4,38 +4,13 @@
 	 y="0px" viewBox="0 0 1600 1600" style="enable-background:new 0 0 1600 1600;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F74354;}
-	.st1{fill:#FCF0FF;}
+	.st1{fill:#DEEBFF;}
 	.st2{fill:#5DB2ED;}
 	.st3{fill:#1E3C68;}
 	.st4{fill:#31AD63;}
 	.st5{fill:#F99F46;}
 	.st6{fill:#BB73EA;}
 	.st7{fill:#FF5A72;}
-	.st8{fill:#FFCE6C;}
-	.st9{fill:#FFEDDC;}
-	.st10{fill:#FAF4F2;}
-	.st11{fill:#3775B4;}
-	.st12{fill:#FFB8D5;}
-	.st13{fill:#FFE6EE;}
-	.st14{fill:#BC0024;}
-	.st15{fill:#F27E00;}
-	.st16{fill:#833020;}
-	.st17{fill:#12753A;}
-	.st18{fill:#86EFB0;}
-	.st19{fill:#E5F9DE;}
-	.st20{fill:#28A5A5;}
-	.st21{fill:#006973;}
-	.st22{fill:#73F4F0;}
-	.st23{fill:#E9FDFF;}
-	.st24{fill:#55CE86;}
-	.st25{fill:#54D3D0;}
-	.st26{fill:#C88AF9;}
-	.st27{fill:#7A32A5;}
-	.st28{fill:#D7BDFF;}
-	.st29{fill:#1A4D84;}
-	.st30{fill:#1F2A3F;}
-	.st31{fill:#A6D9FF;}
-	.st32{fill:#DEEBFF;}
 </style>
 <rect class="st0" width="1600" height="1600"/>
 <path class="st1" d="M800,1294.999c-141.834-0.706-276.967-2.233-384.383-12.604c-108.358-10.387-189-29.619-243.608-66.12
@@ -415,43 +390,4 @@
 		c1.441,0.765,2.798,1.584,4.067,2.465c2.323,1.599,4.359,3.396,6.136,5.385l-35.053,22.925h44.718
 		c0.548,3.749,0.813,7.681,0.84,11.704C284.208,607.688,283.943,611.62,283.395,615.37z"/>
 </g>
-<g>
-	<g>
-		<path class="st2" d="M-808.594,820.582c1.93,0,1.933-3,0-3C-810.525,817.582-810.528,820.582-808.594,820.582L-808.594,820.582z"
-			/>
-	</g>
-</g>
-<rect x="-861.155" y="465.828" class="st8" width="142.857" height="142.857"/>
-<rect x="-1004.012" y="465.828" class="st9" width="142.857" height="142.857"/>
-<rect x="-1146.869" y="180.114" class="st10" width="142.857" height="857.143"/>
-<rect x="-575.298" y="180.114" class="st11" width="142.857" height="142.857"/>
-<rect x="-575.298" y="322.971" class="st0" width="142.857" height="142.857"/>
-<rect x="-861.155" y="322.971" class="st12" width="142.857" height="142.857"/>
-<rect x="-1004.012" y="322.971" class="st13" width="142.857" height="142.857"/>
-<rect x="-432.44" y="322.971" class="st14" width="142.857" height="142.857"/>
-<rect x="-575.298" y="465.828" class="st15" width="142.857" height="142.857"/>
-<rect x="-432.44" y="465.828" class="st16" width="142.857" height="142.857"/>
-<rect x="-575.298" y="608.685" class="st4" width="142.857" height="142.857"/>
-<rect x="-432.44" y="608.685" class="st17" width="142.857" height="142.857"/>
-<rect x="-861.155" y="608.685" class="st18" width="142.857" height="142.857"/>
-<rect x="-1004.012" y="608.685" class="st19" width="142.857" height="142.857"/>
-<rect x="-575.298" y="751.542" class="st20" width="142.857" height="142.857"/>
-<rect x="-432.44" y="751.542" class="st21" width="142.857" height="142.857"/>
-<rect x="-861.155" y="751.542" class="st22" width="142.857" height="142.857"/>
-<rect x="-1004.012" y="751.542" class="st23" width="142.857" height="142.857"/>
-<rect x="-575.298" y="894.399" class="st6" width="142.857" height="142.857"/>
-<rect x="-718.155" y="322.971" class="st7" width="142.857" height="142.857"/>
-<rect x="-718.155" y="465.828" class="st5" width="142.857" height="142.857"/>
-<rect x="-718.155" y="608.685" class="st24" width="142.857" height="142.857"/>
-<rect x="-718.155" y="751.542" class="st25" width="142.857" height="142.857"/>
-<rect x="-718.155" y="894.399" class="st26" width="142.857" height="142.857"/>
-<rect x="-432.44" y="894.399" class="st27" width="142.857" height="142.857"/>
-<rect x="-861.155" y="894.399" class="st28" width="142.857" height="142.857"/>
-<rect x="-1004.012" y="894.399" class="st1" width="142.857" height="142.857"/>
-<rect x="-432.44" y="180.114" class="st29" width="142.714" height="142.857"/>
-<rect x="-289.583" y="180.114" class="st3" width="142.714" height="142.857"/>
-<rect x="-289.583" y="323.114" class="st30" width="142.857" height="714.143"/>
-<rect x="-861.155" y="180.114" class="st31" width="142.857" height="142.857"/>
-<rect x="-1004.012" y="180.114" class="st32" width="142.857" height="142.857"/>
-<rect x="-718.155" y="180.114" class="st2" width="142.857" height="142.857"/>
 </svg>
