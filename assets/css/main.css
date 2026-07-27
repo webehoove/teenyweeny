@@ -409,7 +409,7 @@ h1.special_banner {
 }
 h1.special {
 	font-size: 4.75rem;
-	line-height: 1;
+	line-height: 0.9;
 }
 h1.special_one {
 	font-size: 5.75rem;
