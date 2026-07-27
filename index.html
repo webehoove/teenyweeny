@@ -16,6 +16,8 @@
 <meta property="og:site_name" content="Бренд Портал - Teeny Weeny English"/>
 <meta property="og:image" content="imgs/support/android-chrome-512x512.png">
 <meta http-equiv="Expires" content="0" />
+<link rel="preload" href="../webfonts/twe_sans_title/TWE-TravelsNext-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../webfonts/twe_sans_title/TWE-TravelsNext-Black.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/rowmain.css" />
 <link rel="stylesheet" href="assets/css/xmain.css" />
@@ -60,7 +62,7 @@
 	position: relative;
 	content: 'открыть';
 	color: #FFF;
-	font-family: 'Hayat Md';
+	font-family: 'TWE Bd';
 	font-size: 1rem;
 	text-transform: uppercase;
 	border-bottom: 1px solid rgba(255, 255, 255, 1);
@@ -188,7 +190,7 @@
           </div>
           <div class="row">
             <div class="col-7 col-12-small">
-              <h1 class="special_banner bd_tt">Бренд Портал <span class="blk_num t_color_b">V.01</span></h1>
+              <h1 class="special_banner bd_tt animate-text-on-load">Бренд Портал <span class="blk_num t_color_b">V.01</span></h1>
               <hr class="mini">
             </div>
             <div class="col-5 col-12-small">
@@ -223,12 +225,12 @@
       <div class="row">
         <div class="col-12 col-12-small">
           <hr class="block">
-          <h3 class="special bd_tx t_color_b upup">Бренд со смыслом.<br class="offdesk">
+          <h3 class="special bd_tt t_color_b upup  animate-text-on-load">Бренд со смыслом.<br class="offdesk">
             Дизайн с душой.</h3>
           <hr class="block1">
-          <h1 class="special_one db_tt">Добро пожаловать<br>
+          <h1 class="special_one xbd_tt t_color_b animate-text-on-load">Добро пожаловать<br>
             на портал бренда</h1>
-          <h1 class="special_one xbd_tt">Teeny Weeny English</h1>
+          <h1 class="special_one blk_tt animate-text-on-load">Teeny Weeny English</h1>
           <hr class="block1">
           <h3>Здесь вы найдете все необходимые<br>
             ресурсы для поддержания ясности<br>
@@ -246,8 +248,9 @@
       <div class="row">
         <div class="col-6 col-12-small">
           <div class="box_banner color_box_db" style="background-image:url(imgs/twe_banner_children.jpg);">
-            <h1 class="special bd_tt t_color_w" style="position:absolute; width:100%; top:50%; left:50%; transform: translate(-50%,-50%); padding:0">Визуальный<br>
-              язык бренда</h1>
+            <h1 class="special xbd_tt t_color_w" style="position:absolute; width:100%; top:50%; left:50%; transform: translate(-50%,-50%); padding:0">Визуальный<br>
+              <span style="transform: translateX(-50px);">язык</span><br>
+              Бренда</h1>
             <ul style="position:absolute; bottom:1rem; width:100%; left:50%; transform: translate(-50%,0%);">
               <li><a href="https://webehoove.github.io/hayat/mission/" class="button small bd_tx upup">Программы фонда</a></li>
             </ul>
@@ -1140,6 +1143,34 @@
 <script src="assets/js/util.js"></script> 
 <script src="assets/js/main.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script> 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  
+  // 1. Проверяем, поддерживает ли браузер нужный API
+  if ('fonts' in document) {
+    
+    // 2. Ждем, пока браузер полностью загрузит ВСЕ шрифты
+    // Это API FontFaceSet
+    document.fonts.ready.then(function() {
+      console.log('Все шрифты загружены!');
+      
+      // 3. Находим все элементы с нашим классом
+      const textElements = document.querySelectorAll('.animate-text-on-load');
+      
+      // 4. Добавляем им класс, запускающий анимацию
+      textElements.forEach(element => {
+        element.classList.add('font-is-ready');
+      });
+      
+    });
+  } else {
+    // Резервный вариант для совсем старых браузеров (они сразу покажут текст)
+    document.querySelectorAll('.animate-text-on-load').forEach(element => {
+        element.classList.remove('animate-text-on-load');
+    });
+  }
+});
+</script>
 <script>
 SmoothScroll({
     animationTime    : 1000,
