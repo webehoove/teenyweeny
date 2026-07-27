@@ -16,8 +16,6 @@
 <meta property="og:site_name" content="Бренд Портал - Teeny Weeny English"/>
 <meta property="og:image" content="imgs/support/android-chrome-512x512.png">
 <meta http-equiv="Expires" content="0" />
-<link rel="preload" href="../webfonts/twe_sans_title/TWE-TravelsNext-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../webfonts/twe_sans_title/TWE-TravelsNext-Black.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/rowmain.css" />
 <link rel="stylesheet" href="assets/css/xmain.css" />
@@ -195,8 +193,8 @@
             </div>
             <div class="col-5 col-12-small">
               <h4 class="md_tx">Ваш онлайн гид по обновленному бренду.<br>
-                Все, что вам нужно для работы с новым<br>
-                фирменным стилем.</h4>
+              Все, что вам нужно для работы с новым<br>
+              фирменным стилем.</h4>
               <hr class="block1">
             </div>
           </div>
@@ -208,7 +206,7 @@
   <!-- VIDEO LOGO -->
   
   <section class="banner style2 orient-center content-align-center image-position-center">
-    <div class="content"> 
+    <div class="content">
       <video id="introVideo" autoplay loop muted playsinline class="responsive-video mobile-only">
         <source id="videoSource" src="videos/twe_logo_intro_jump_mob.mp4" type="video/mp4">
       </video>
@@ -225,12 +223,12 @@
       <div class="row">
         <div class="col-12 col-12-small">
           <hr class="block">
-          <h3 class="special bd_tt t_color_b upup  animate-text-on-load">Бренд со смыслом.<br class="offdesk">
+          <h3 class="special bd_tt t_color_b upup">Бренд со смыслом.<br class="offdesk">
             Дизайн с душой.</h3>
           <hr class="block1">
-          <h1 class="special_one xbd_tt t_color_b animate-text-on-load">Добро пожаловать<br>
+          <h1 class="special_one blk_tt t_color_b">Добро пожаловать<br>
             на портал бренда</h1>
-          <h1 class="special_one blk_tt animate-text-on-load">Teeny Weeny English</h1>
+          <h1 class="special_one blk_tt">Teeny Weeny English</h1>
           <hr class="block1">
           <h3>Здесь вы найдете все необходимые<br>
             ресурсы для поддержания ясности<br>
@@ -326,9 +324,11 @@
           </ul>
           <hr class="block">
         </div>
-        <div class="col-6 col-12-small"> <span class="image fit rounded"><a href="https://webehoove.github.io/teenyweeny/visual-identity/typography/"><video autoplay loop muted playsinline>
-        <source id="videoSource" src="videos/twe_typography_go.mp4" type="video/mp4">
-      </video></a></span>
+        <div class="col-6 col-12-small"> <span class="image fit rounded"><a href="https://webehoove.github.io/teenyweeny/visual-identity/typography/">
+          <video autoplay loop muted playsinline>
+            <source id="videoSource" src="videos/twe_typography_go.mp4" type="video/mp4">
+          </video>
+          </a></span>
           <hr>
           <a href="https://webehoove.github.io/teenyweeny/visual-identity/typography/" class="button large_a bd_tx upup">Типографика</a>
           </ul>
@@ -1146,31 +1146,25 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   
-  // 1. Проверяем, поддерживает ли браузер нужный API
   if ('fonts' in document) {
     
-    // 2. Ждем, пока браузер полностью загрузит ВСЕ шрифты
-    // Это API FontFaceSet
     document.fonts.ready.then(function() {
       console.log('Все шрифты загружены!');
       
-      // 3. Находим все элементы с нашим классом
       const textElements = document.querySelectorAll('.animate-text-on-load');
       
-      // 4. Добавляем им класс, запускающий анимацию
       textElements.forEach(element => {
         element.classList.add('font-is-ready');
       });
       
     });
   } else {
-    // Резервный вариант для совсем старых браузеров (они сразу покажут текст)
     document.querySelectorAll('.animate-text-on-load').forEach(element => {
         element.classList.remove('animate-text-on-load');
     });
   }
 });
-</script>
+</script> 
 <script>
 SmoothScroll({
     animationTime    : 1000,
