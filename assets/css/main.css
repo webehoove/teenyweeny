@@ -364,7 +364,7 @@ h1.special {
 	line-height: 1.05;
 }
 h1.special_one {
-	font-size: 5rem;
+	font-size: 5.75rem;
 	line-height: 1.05;
 }
 h2 {
@@ -515,7 +515,7 @@ h1 {
 	line-height: 1.2;
 }
 h1.special_banner {
-	font-size: 2.35rem;
+	font-size: 2.15rem;
 	line-height: 1;
 }
 h1.special {
@@ -539,8 +539,8 @@ h3 {
 	line-height: 1.2;
 }
 h3.special {
-	font-size: 1.5rem;
-	line-height: 1.1;
+	font-size: 1.45rem;
+	line-height: 1.15;
 }
 h4 {
 	font-size: 1.35rem;
