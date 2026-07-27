@@ -73,6 +73,14 @@
 	font-style: normal;
 	src: url(../webfonts/twe_numbers/TWE-TransformaSans-Black.woff2) format('woff2'), url(../webfonts/twe_sans_text/TWE-TransformaSans-Black.woff) format('woff');
 }
+/*___________Text&Play______________*/
+@font-face {
+	font-family: 'TWE Text and Play';
+	font-weight: normal;
+	font-style: normal;
+	src: url(../webfonts/twe_text_and_play/TWE-T-A-P.woff) format('woff');
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -208,7 +216,7 @@ body {
 	color: rgba(31, 42, 63, 1);
 }
 body, input, select, textarea {
-	font-family: "TWE Rg", Helvetica, sans-serif;
+	font-family: "TWE Md", Helvetica, sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -303,6 +311,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	font-family: 'TWE Num Blk', Helvetica, sans-serif;
 	font-feature-settings: "ss05" 1;
 }
+.text_and_play {
+	font-family: 'TWE Text and Play', Helvetica, sans-serif;
+}
 /* Text Color */
 
 .t_color_db {
@@ -324,7 +335,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: rgba(222, 235, 255, 1);
 }
 .t_color_r {
-	color: rgba(255, 80, 93, 1);
+	color: rgba(247, 67, 84, 1);
 }
 .t_color_dgn {
 	color: rgba(0, 41, 32, 1);
@@ -355,15 +366,15 @@ h1 {
 }
 h1.special_banner {
 	font-size: 4.5rem;
-	line-height: 1.05;
+	line-height: 1;
 }
 h1.special {
-	font-size: 4rem;
-	line-height: 1.05;
+	font-size: 4.75rem;
+	line-height: 1;
 }
 h1.special_one {
 	font-size: 5.75rem;
-	line-height: 1.05;
+	line-height: 1;
 }
 h2 {
 	font-size: 2.5rem;
@@ -1703,10 +1714,25 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	overflow: hidden;
 	z-index: 2;
 }
-.banner.style2 .responsive-video {
-	display: block;
-	width: 100%;
-	height: auto;
+.responsive-video {
+  width: 100%;
+  height: auto;
+}
+
+.desktop-only {
+  display: none !important;
+}
+.mobile-only {
+  display: block !important;
+}
+
+@media (min-width: 768px) {
+  .desktop-only {
+    display: block !important;
+  }
+  .mobile-only {
+    display: none !important;
+  }
 }
  @media screen and (max-width: 1680px) {
 }
