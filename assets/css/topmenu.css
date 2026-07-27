@@ -80,7 +80,7 @@
 	position: absolute;
 	top: 0;
 	width: 60%;
-	border-bottom: 2px solid rgba(31, 42, 63, 1);
+	border-bottom: 2px solid rgba(30, 60, 104, 1);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btnb span, .menu-btnb:before, .menu-btnb:after {
@@ -90,7 +90,7 @@
 	position: absolute;
 	top: 0;
 	width: 60%;
-	border-bottom: 2px solid rgba(31, 42, 63, 1);
+	border-bottom: 2px solid rgba(30, 60, 104, 1);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btn:before {
@@ -121,11 +121,11 @@
 }
 #active:checked + .menu-btn:before {
 	transform: rotate(45deg);
-	border-color: rgba(31, 42, 63, 1);
+	border-color: rgba(30, 60, 104, 1);
 }
 #active:checked + .menu-btn:after {
 	transform: rotate(-45deg);
-	border-color: rgba(31, 42, 63, 1);
+	border-color: rgba(30, 60, 104, 1);
 }
 /* closing animation */
 #active:checked + .menu-btnb span {
@@ -133,11 +133,11 @@
 }
 #active:checked + .menu-btnb:before {
 	transform: rotate(45deg);
-	border-color: rgba(31, 42, 63, 1);
+	border-color: rgba(30, 60, 104, 1);
 }
 #active:checked + .menu-btnb:after {
 	transform: rotate(-45deg);
-	border-color: rgba(31, 42, 63, 1);
+	border-color: rgba(30, 60, 104, 1);
 }
 .wrapper_menu ul {
 	position: relative;
@@ -157,9 +157,9 @@
 	outline: none !important;
 	position: relative;
 	line-height: 2;
-	color: rgba(31, 42, 63, 1);
+	color: rgba(30, 60, 104, 1);
 	text-decoration: none;
-	font-size: 1.15rem;
+	font-size: 1.65rem;
 	padding: 0;
 	margin: 0;
 	opacity: 0;
@@ -170,7 +170,7 @@
 	font-size: 1.3rem;
 }
 .wrapper_menu ul li a:hover {
-	color: rgba(31, 42, 63, 1);
+	color: rgba(30, 60, 104, 1);
 }
 input[type="checkbox"] {
 	display: none;
