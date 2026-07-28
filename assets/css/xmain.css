@@ -131,12 +131,19 @@ ul.goup li {
 
 /* Style the button */
 .dropbtn {
-  background-color: #3498db;
+  background-image: url(../../imgs/icons/icon_arrow_down_drop_but_db.svg);
+  background-repeat: no-repeat;
+  background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
+  position: relative;
+  background-color: inherit;
   color: white;
   font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+.dropbtn:hover {
+	background-image: url(../../imgs/icons/icon_arrow_down_drop_but_w.svg);
 }
 
 /* Hide the dropdown menu by default */
