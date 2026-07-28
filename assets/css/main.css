@@ -261,10 +261,6 @@ body, input, select, textarea {
 a {
 	-webkit-tap-highlight-color: transparent !important;
 	outline: none !important;
-	-moz-transition: color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out;
 	text-decoration: none;
 	color: inherit;
 	user-select: none;
@@ -404,7 +400,7 @@ h1 {
 	line-height: 1.2;
 }
 h1.special_banner {
-	font-size: 4.5rem;
+	font-size: 4.75rem;
 	line-height: 1;
 }
 h1.special {
@@ -660,10 +656,10 @@ a {
 	border: none;
 }
 a:hover {
-	color: rgba(70, 130, 250, 1);
+	color: inherit;
 }
 a:active, a:visited:active {
-	color: rgba(70, 130, 250, 1);
+	color: inherit;
 }
 .text_link a {
 	color: inherit;
@@ -921,7 +917,7 @@ input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit, but
 	width: 100%;
 }
 button.large, .button.large {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	height: 4.5rem;
 	display: flex;
 	align-items: center;
@@ -935,7 +931,7 @@ button.large_a, .button.large_a {
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
 	position: relative;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	width: 50%;
 	height: 4.5rem;
 	display: flex;
@@ -971,11 +967,41 @@ button.medium, .button.medium {
 	justify-content: center;
 	width: auto;
 	border-radius: 1.75rem;
-	padding: 0 1.35rem;
+	padding: 0 1.25rem;
 	text-align: center;
 }
 button.medium:hover, .button.medium:hover {
 	border-radius: 0.5rem;
+}
+button.medium_a, .button.medium_a {
+	background-image: url(../../imgs/icons/icon_download_right_but_ao.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
+	position: relative;
+	font-size: 0.9rem;
+	width: auto;
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 1.75rem;
+	padding: 0 4.75rem 0 1.25rem;
+	z-index: 1;
+	overflow: hidden;
+}
+button.medium_a::after, .button.medium_a::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../../imgs/icons/icon_download_right_but_b.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Matches base button arrow alignment */
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	z-index: -1;
 }
 button.small, .button.small {
 	font-size: 0.85rem;

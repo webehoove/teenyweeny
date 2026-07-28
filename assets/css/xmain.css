@@ -122,6 +122,51 @@ ul.goup li {
 }
 .offdesk, .offdesk_title, .offdesk_all, .off_news_desk {
 	display: none;
+
+/* Dropdown */
+}.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hide the dropdown menu by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  z-index: 1;
+  border-radius: 1.75rem;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+}
+
+/* Show the dropdown menu when hovering over the container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change button color when the dropdown is active */
+.dropdown:hover .dropbtn {
 }
 }
  @media screen and (max-width: 1366px) {
