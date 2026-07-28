@@ -156,21 +156,21 @@
 	-webkit-tap-highlight-color: transparent !important;
 	outline: none !important;
 	position: relative;
+	font-size: 1.35rem;
 	line-height: 2;
 	color: rgba(26, 77, 132, 1);
 	text-decoration: none;
-	font-size: 1.65rem;
 	padding: 0;
 	margin: 0;
 	opacity: 0;
 	transition: all 0.2s ease;
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.wrapper_menu ul li.topmenu_big a {
-	font-size: 1.3rem;
+.wrapper_menu ul li.title a {
+	font-size: 1.75rem;
 }
 .wrapper_menu ul li a:hover {
-	color: rgba(30, 60, 104, 1);
+	color: rgba(26, 77, 132, 1)
 }
 input[type="checkbox"] {
 	display: none;
