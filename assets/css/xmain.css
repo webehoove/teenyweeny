@@ -15,7 +15,7 @@
 	transform: scale(1);
 }
 .logotype_lockup_b {
-	width: 19rem;
+	width: 16rem;
 }
 #dynamic-text {
 	opacity: 1;
@@ -241,7 +241,7 @@ ul li.bottommenu_big {
 }
 ul.bottommenu_hor li {
 	display: block;
-	font-size: 1.2rem;
+	font-size: 1.35rem;
 	margin: 0 0 1rem 0;
 }
 .offmobtext {

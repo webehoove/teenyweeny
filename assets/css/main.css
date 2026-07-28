@@ -872,7 +872,10 @@ ul.box_link_w li a:hover {
 }
 }
  @media screen and (max-width: 360px) {
-
+.box_banner .videobg video {
+	width: auto;
+	height: 101svh;
+}
 }
 /* Button */
 
@@ -1702,8 +1705,11 @@ body.is-preload .banner.onload-image-fade-in .image img {
 }
 /* Banner (style1) */
 
+
+/* Banner (style2) */
+
 .banner.style1 {
-	padding: 0;
+	padding: 0 2rem;
 	margin: 0 auto;
 	width: 100%;
 	-moz-align-items: left;
@@ -1725,11 +1731,23 @@ body.is-preload .banner.onload-image-fade-in .image img {
 .banner.style1 .content {
 	position: relative;
 	width: 100%;
-	height: 50%;
+	height: 97svh;
 	overflow: hidden;
 	z-index: 2;
 }
-.banner.style1 .content .image_wide img {
+.banner.style1 .content .text_center {
+	position:absolute;
+	width:100%;
+	top:50%;
+	left:50%; transform:
+	translate(-50%,-50%);
+	padding: 0 1rem;
+}
+.banner.style1 .content.block_bottom {
+	position: absolute;
+	bottom: 2rem;
+}
+.banner.style1 .image {
 	-moz-flex-grow: 0;
 	-webkit-flex-grow: 0;
 	-ms-flex-grow: 0;
@@ -1738,36 +1756,110 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	-webkit-flex-shrink: 0;
 	-ms-flex-shrink: 0;
 	flex-shrink: 0;
-	display: block;
+	position: absolute;
 	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.banner.style1 .image img {
+	-moz-object-fit: cover;
+	-webkit-object-fit: cover;
+	-ms-object-fit: cover;
+	object-fit: cover;
+	-moz-object-position: center;
+	-webkit-object-position: center;
+	-ms-object-position: center;
+	object-position: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	z-index: 1;
 }
-.banner.style1 .content .image_wide video {
-	-moz-flex-grow: 0;
-	-webkit-flex-grow: 0;
-	-ms-flex-grow: 0;
-	flex-grow: 0;
-	-moz-flex-shrink: 0;
-	-webkit-flex-shrink: 0;
-	-ms-flex-shrink: 0;
-	flex-shrink: 0;
+.banner.style1 .image video {
+	-webkit-appearance: none;
+	-moz-object-fit: cover;
+	-webkit-object-fit: cover;
+	-ms-object-fit: cover;
+	object-fit: cover;
+	-moz-object-position: center;
+	-webkit-object-position: center;
+	-ms-object-position: center;
+	object-position: center;
 	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100%;
 	z-index: 1;
 }
  @media screen and (max-width: 1680px) {
 }
  @media screen and (max-width: 1366px) {
+.banner.style1 {
+	padding: 0 1.5rem;
+}
+.banner.style1 .content .block_bottom {
+	bottom: 1.5rem;
+}
 }
  @media screen and (max-width: 1280px) {
 }
  @media screen and (max-width: 1080px) {
 }
  @media screen and (max-width: 1024px) {
+.banner.style1 .content {
+	height: 70svh;
+}
 }
  @media screen and (max-width: 980px) {
 }
  @media screen and (max-width: 736px) {
+.banner.style1 {
+	padding: 0 1rem;
+}
+.banner.style1 .content {
+	height: 75svh;
+}
+.banner.style1 .content .block_bottom {
+	bottom: 1rem;
+}
+}
+ @media screen and (max-width: 414px) {
+.banner.style1 {
+	padding: 0 1rem;
+}
+.banner.style1 .content {
+	height: 100svh;
+}
+.banner.style1 .content .block_bottom {
+	bottom: 1rem;
+}
+}
+.banner.style1.fullscreen {
+	min-height: 100vh;
+}
+.banner.style1.content-align-left {
+	text-align: left;
+}
+.banner.style1.content-align-right {
+	text-align: right;
+}
+.banner.style1.image-position-left .image img {
+	-moz-object-position: left;
+	-webkit-object-position: left;
+	-ms-object-position: left;
+	object-position: left;
+}
+.banner.style1.image-position-right .image img {
+	-moz-object-position: right;
+	-webkit-object-position: right;
+	-ms-object-position: right;
+	object-position: right;
 }
 /* Banner (style2) */
 
@@ -2212,7 +2304,10 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	opacity: .8;
 }
 #wrapper > .invert hr, #wrapper > .invert hr.lineer_small, #wrapper > .invert hr.lineer_zero {
-	border-color: rgba(93, 178, 237, .5);
+	border-color: rgba(255, 255, 255, .5);
+}
+#wrapper > .invert ul.bottommenu {
+	border-color: rgba(255, 255, 255, .5);
 }
 #wrapper > .invert button.small_a, .button.small_a {
 	background-image: url(../../imgs/icons/icon_arrow_right_but_d.svg);
@@ -2352,29 +2447,14 @@ body.is-preload .banner.onload-image-fade-in .image img {
 #wrapper > .color_ao {
 	background-color: rgba(254, 255, 248, 1);
 }
-#wrapper > .color_Hdr {
+#wrapper > .color_dr {
 	background-color: rgba(121, 15, 53, 1);
 }
-#wrapper > .color_Hr {
-	background-color: rgba(255, 61, 69, 1);
+#wrapper > .color_r {
+	background-color: rgba(247, 67, 84, 1);
 }
-#wrapper > .color_Har {
+#wrapper > .color_ar {
 	background-color: rgba(255, 225, 232, 1);
-}
-#wrapper > .color_Hdgr {
-	background-color: rgba(0, 90, 70, 1);
-}
-#wrapper > .color_Hgr {
-	background-color: rgba(116, 241, 181, 1);
-}
-#wrapper > .color_Hagr {
-	background-color: rgba(220, 249, 233, 1);
-}
-#wrapper > .color_Hg10 {
-	background-color: rgba(236, 238, 246, 1);
-}
-#wrapper > .color_Hg20 {
-	background-color: rgba(230, 232, 240, 1);
 }
 #wrapper.divided > * {
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0);
