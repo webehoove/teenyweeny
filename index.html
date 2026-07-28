@@ -35,73 +35,6 @@
 	shape-rendering: geometricPrecision;
 	text-rendering: geometricPrecision;
 }
-.collapsible {
-	transition: opacity .2s ease-out;
-	-moz-transition: opacity .2s ease-out;
-	-webkit-transition: opacity .2s ease-out;
-	-o-transition: opacity .2s ease-out;
-	position: relative;
-	background-color: rgba(28, 46, 114, 1);
-	border-radius: 1rem;
-	color: #FFF;
-	cursor: pointer;
-	padding: 1.5rem;
-	margin-top: 0;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	opacity: 1;
-}
-.active, .collapsible:hover {
-	opacity: 1;
-}
-.collapsible:after {
-	position: relative;
-	content: 'открыть';
-	color: #FFF;
-	font-family: 'TWE Bd';
-	font-size: 1rem;
-	text-transform: uppercase;
-	border-bottom: 1px solid rgba(255, 255, 255, 1);
-	float: right;
-	bottom: 1.2rem;
-	opacity: .6;
-}
-.active:after {
-	content: "закрыть";
-	font-size: 1rem;
-	text-transform: uppercase;
-}
-.coltext {
-	position: relative;
-	top: 0;
-	color: rgba(4, 30, 70, 1);
-	background-color: #FFF;
-	border-radius: 1rem;
-	padding: 0 1.5rem;
-	margin: 0 0 1rem 0;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.3s ease-out;
-}
-@media screen and (max-width: 736px) {
-.collapsible {
-	padding: 1.25rem 1.25rem 3rem 1.25rem;
-}
-.active, .collapsible:hover {
-	opacity: 1;
-}
-.collapsible:after {
-	font-size: 1rem;
-	float: left;
-	top: 1rem;
-	bottom: 1rem;
-}
-.h1.coltitle {
-	bottom: 1rem;
-}
-}
 </style>
 </head><body class="is-preload">
 <div id="wrapper"> 
@@ -112,7 +45,7 @@
     <div class="inner offdesk">
       <div class="row">
         <div class="col-12 col-12-small">
-          <div id="logotype_sym"> <a href="https://webehoove.github.io/teenyweeny/"><img src="imgs/brand/twe_logotype_b_r_b_0.svg" class="logo" onContextMenu="return false;" alt="Teeny Weeny English" /></a> </div>
+          <div id="logotype_sym"> <a href="https://webehoove.github.io/teenyweeny/"><img src="imgs/brand/twe_logotype_mb_r_mb_0.svg" class="logo" onContextMenu="return false;" alt="Teeny Weeny English" /></a> </div>
         </div>
         <div class="menumob col-1 col-12-small">
           <input type="checkbox" id="active" name="x">
@@ -166,7 +99,7 @@
       <div class="row">
         <div id="hideitlow" class="col-4 off-12-small">
           <ul class="logotype_lockup_t">
-            <li class="logotype_lockup_t"><a href="https://webehoove.github.io/teenyweeny/"><img src="imgs/brand/twe_logotype_b_r_b_0.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></a></li>
+            <li class="logotype_lockup_t"><a href="https://webehoove.github.io/teenyweeny/"><img src="imgs/brand/twe_logotype_mb_r_mb_0.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></a></li>
           </ul>
         </div>
         <div id="hideitlow" class="col-8 off-12-small">
@@ -188,13 +121,13 @@
           </div>
           <div class="row">
             <div class="col-7 col-12-small">
-              <h1 class="special_banner bd_tt animate-text-on-load">Бренд Портал <span class="blk_num t_color_b">V.01</span></h1>
+              <h1 class="special_banner bd_tt t_color_mb animate-text-on-load">Бренд Портал <span class="blk_num t_color_b">V.01</span></h1>
               <hr class="mini">
             </div>
             <div class="col-5 col-12-small">
               <h4 class="md_tx">Ваш онлайн гид по обновленному бренду.<br>
-              Все, что вам нужно для работы с новым<br>
-              фирменным стилем.</h4>
+                Все, что вам нужно для работы с новым<br>
+                фирменным стилем.</h4>
               <hr class="block1">
             </div>
           </div>
@@ -228,9 +161,9 @@
           <hr class="block1">
           <h1 class="special_one blk_tt t_color_b">Добро пожаловать<br>
             на портал бренда</h1>
-          <h1 class="special_one blk_tt">Teeny Weeny English</h1>
+          <h1 class="special_one blk_tt t_color_mb">Teeny Weeny English</h1>
           <hr class="block1">
-          <h3 class="bd_tx">Здесь вы найдете все необходимые<br>
+          <h3 class="md_tx">Здесь вы найдете все необходимые<br>
             ресурсы для поддержания ясности<br>
             и единообразия нашего бренда.</h3>
           <hr class="block2">
@@ -301,7 +234,7 @@
       </div>
       <div class="row">
         <div class="col-6 col-12-small">
-          <h1 class="special bd_tt">Основные<br>
+          <h1 class="special bd_tt t_color_mb">Основные<br>
             элементы стиля</h1>
           <hr class="block1">
         </div>
@@ -345,15 +278,21 @@
   <section class="wrapper style1 align-center">
     <div class="inner">
       <div class="row">
-        <div class="col-6 col-12-small"> <span class="image fit rounded"><a href="https://webehoove.github.io/teenyweeny/visual-identity/color/"><img src="imgs/twe_color_go.png" onContextMenu="return false;" alt="Teeny Weeny English" /></a></span>
+        <div class="col-6 col-12-small"> <span class="image fit rounded"><a href="https://webehoove.github.io/teenyweeny/visual-identity/color/">
+          <video autoplay loop muted playsinline>
+            <source id="videoSource" src="videos/twe_color_go.mp4" type="video/mp4">
+          </video>
+          </a></span>
           <hr>
           <a href="https://webehoove.github.io/teenyweeny/visual-identity/color/" class="button large_a bd_tx upup">Цвета</a>
           </ul>
           <hr class="block">
         </div>
-        <div class="col-6 col-12-small"> <span class="image fit rounded"><a href="https://webehoove.github.io/teenyweeny/visual-identity/text-and-play/"><video autoplay loop muted playsinline>
+        <div class="col-6 col-12-small"> <span class="image fit rounded"><a href="https://webehoove.github.io/teenyweeny/visual-identity/text-and-play/">
+          <video autoplay loop muted playsinline>
             <source id="videoSource" src="videos/twe_text_and_play_go.mp4" type="video/mp4">
-          </video></a></span>
+          </video>
+          </a></span>
           <hr>
           <a href="https://webehoove.github.io/teenyweeny/visual-identity/text-and-play/" class="button large_a bd_tx upup">Text & Play</a>
           </ul>
@@ -1213,8 +1152,8 @@ $(function() {
     });
   
 });
-var initialSrc = "imgs/brand/twe_logotype_b_r_b_0.svg";
-var scrollSrc = "imgs/brand/twe_logotype_b_r_b_0.svg";
+var initialSrc = "imgs/brand/twe_logotype_mb_r_mb_0.svg";
+var scrollSrc = "imgs/brand/twe_logotype_mb_r_mb_0.svg";
 $(window).scroll(function() {
    var value = $(this).scrollTop();
    if (value > 100)
