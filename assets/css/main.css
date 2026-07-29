@@ -669,36 +669,20 @@ a:active, a:visited:active {
 .text_link a:active, .text_link a:visited:active {
 	color: rgba(70, 130, 250, 1);
 }
-.text_link_gr a {
-	color: rgba(0, 90, 70, 1);
-	border-bottom: 1px solid rgba(0, 90, 70, 1);
-}
-.text_link_gr a:hover {
-	color: rgba(0, 168, 129, 1);
-}
-.text_link_gr a:active, .text_link_gr a:visited:active {
-	color: rgba(0, 168, 129, 1);
-}
-.text_link_arrow {
+.text_link_icon {
 	position: relative;
 	display: flex;
 	align-items: center;
-	width: 50%;
-	height: 4rem;
 }
-.text_link_arrow li.a_right {
-	margin-left: 1rem;
+.text_link_icon li.a_right {
+	margin-left: 0.5rem;
 }
-.text_link_arrow li.a_right img.l_arrow {
-	width: 1.15rem;
+.text_link_icon li.a_right img.r_icon {
+	width: 1.75rem;
 }
  @media screen and (max-width: 736px) {
-.text_link_arrow {
-	width: 100%;
-}
-.text_link_arrow li.a_right img.l_arrow {
-	position: relative;
-	width: 1.15rem;
+.text_link_icon li.a_right img.r_icon {
+	width: 2rem;
 }
 }
 /* Box */
@@ -911,9 +895,6 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 	flex-direction: column;
 	width: 25svh;
 }
-input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit, button.fit, .button.fit {
-	width: 100%;
-}
 button.large, .button.large {
 	font-size: 1.1rem;
 	height: 4.5rem;
@@ -1000,6 +981,9 @@ button.medium_a::after, .button.medium_a::after {
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
+}
+button.medium_a:hover::after, .button.medium_a:hover::after {
+	opacity: 1;
 }
 button.medium.dropmenu, .button.medium.dropmenu {
 	padding: 0 2.75rem 0 1.25rem;
