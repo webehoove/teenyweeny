@@ -141,9 +141,9 @@
 }
 .wrapper_menu ul {
 	position: relative;
-	top: 7rem;
+	top: 9rem;
 	left: 1rem;
-	padding: 0 0 1rem 0;
+	padding: 0 0 2.15rem 0;
 	margin-right: 0;
 	list-style: none;
 	text-align: left;
@@ -156,7 +156,7 @@
 	-webkit-tap-highlight-color: transparent !important;
 	outline: none !important;
 	position: relative;
-	font-size: 1.35rem;
+	font-size: 1.5rem;
 	line-height: 2;
 	color: rgba(26, 77, 132, 1);
 	text-decoration: none;
@@ -167,7 +167,7 @@
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .wrapper_menu ul li.title a {
-	font-size: 1.75rem;
+	font-size: 1.6rem;
 }
 .wrapper_menu ul li a:hover {
 	color: rgba(26, 77, 132, 1)
