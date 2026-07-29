@@ -31,7 +31,7 @@
 	align-items: center;
 }
 .logotype_lockup_b_d li.symbol_b {
-	width: 19rem;
+	width: 16rem;
 	padding-right: 0;
 }
 .logotype_lockup_b_d li.wm_b {
@@ -233,7 +233,6 @@ ul.goup li {
 	width: 12rem;
 }
 ul.bottommenu {
-	border-bottom: 2px solid rgba(93, 178, 237, .5);
 	padding-bottom: 2rem;
 }
 ul.bottommenu li {
