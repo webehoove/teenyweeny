@@ -2241,7 +2241,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	overflow-x: hidden;
 }
 #wrapper > .invert {
-	background-color: rgba(16, 56, 96, 1);
+	background-color: rgba(10, 42, 68, 1);
 	color: rgba(255, 255, 255, 1);
 }
 #wrapper > .invert input, #wrapper > .invert select, #wrapper > .invert textarea {
@@ -2400,6 +2400,9 @@ body.is-preload .banner.onload-image-fade-in .image img {
 }
 #wrapper > .color_00 {
 	background-color: #000;
+}
+#wrapper > .color_w {
+	background-color: rgba(255, 255, 255, 1);
 }
 #wrapper > .color_abg {
 	background-color: rgba(250, 244, 242, 1);
