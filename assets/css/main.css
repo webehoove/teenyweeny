@@ -2092,6 +2092,9 @@ body.is-preload .banner.onload-image-fade-in .image img {
 .wrapper.style1 > .inner .block_shift_right {
 	padding-right: 4rem;
 }
+.round_big {
+	border-radius: 3rem;
+}
  @media screen and (max-width: 1680px) {
 .wrapper.style1 > .inner {
 	padding: 0 8rem;
@@ -2123,6 +2126,9 @@ body.is-preload .banner.onload-image-fade-in .image img {
 }
 .wrapper.style1 > .inner .block_shift_right {
 	padding-right: 0;
+}
+.round_big {
+	border-radius: 2.25rem;
 }
 }
  @media screen and (max-width: 390px) {
