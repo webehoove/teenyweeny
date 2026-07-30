@@ -367,7 +367,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .t_color_ab {
 	color: rgba(222, 235, 255, 1);
 }
-.t_color_r {
+.t_color_nr {
 	color: rgba(247, 67, 84, 1);
 }
 .t_color_dgn {
@@ -937,6 +937,38 @@ button.large_a::after, .button.large_a::after {
 }
 button.large_a:hover::after, .button.large_a:hover::after {
 	opacity: 1;
+}button.large_a_red, .button.large_a_red {
+	background-image: url(../../imgs/icons/icon_arrow_right_but_red.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
+	position: relative;
+	font-size: 1.1rem;
+	width: 50%;
+	height: 4.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 2.25rem;
+	padding: 0 2rem;
+	z-index: 1;
+	overflow: hidden;
+}
+button.large_a_red::after, .button.large_a_red::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../../imgs/icons/icon_arrow_right_but_red_d.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Matches base button arrow alignment */
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	z-index: -1;
+}
+button.large_a_red:hover::after, .button.large_a_red:hover::after {
+	opacity: 1;
 }
 button.medium, .button.medium {
 	font-size: 0.9rem;
@@ -1037,17 +1069,17 @@ button.secondary:hover, .button.secondary:hover {
 button.secondary:active, .button.secondary:active {
 	background-color: rgba(26, 77, 132, 1);
 }
-button.third, .button.third {
-	background-color: rgba(255, 255, 255, 1);
+button.red, .button.red {
+	background-color: rgba(247, 67, 84, 1);
 	box-shadow: none;
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.third:hover, .button.third:hover {
-	background-color: rgba(70, 130, 250, 1);
+button.red:hover, .button.red:hover {
+	background-color: rgba(188, 0, 36, 1);
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.third:active, .button.third:active {
-	background-color: rgba(70, 130, 250, 1);
+button.red:active, .button.red:active {
+	background-color: rgba(247, 67, 84, 1);
 }
 button.forth, .button.forth {
 	background-color: rgba(255, 255, 255, 1);
@@ -2334,18 +2366,16 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	background-color: rgba(70, 130, 250, 1);
 	color: rgba(4, 30, 70, 1);
 }
-#wrapper > .invert input[type="submit"].third, #wrapper > .invert input[type="reset"].third, #wrapper > .invert input[type="button"].third, #wrapper > .invert .button.third {
-	background-color: rgba(4, 30, 70, 1);
+#wrapper > .invert .button.red {
+	background-color: rgba(255, 184, 213, 1);
 	box-shadow: none;
-	color: #fff !important;
+	color: rgba(16, 56, 96, 1) !important;
 }
-#wrapper > .invert input[type="submit"].third:hover, #wrapper > .invert input[type="reset"].third:hover, #wrapper > .invert input[type="button"].third:hover, #wrapper > .invert .button.third:hover {
-	background-color: rgba(70, 130, 250, 1);
-	color: #fff !important;
+#wrapper > .invert .button.red:hover {
+	background-color: rgba(255, 255, 255, 1);
 }
-#wrapper > .invert input[type="submit"].third:active, #wrapper > .invert input[type="reset"].third:active, #wrapper > .invert input[type="button"].third:active, #wrapper > .invert .button.third:active {
-	background-color: rgba(70, 130, 250, 1);
-	color: rgba(255, 255, 255, 1);
+#wrapper > .invert .button.red:active {
+	background-color: rgba(255, 184, 213, 1);
 }
 #wrapper > .invert input[type="submit"].forth, #wrapper > .invert input[type="reset"].forth, #wrapper > .invert input[type="button"].forth, #wrapper > .invert .button.forth {
 	background-color: transparent;
@@ -2437,11 +2467,23 @@ body.is-preload .banner.onload-image-fade-in .image img {
 #wrapper > .color_dr {
 	background-color: rgba(121, 15, 53, 1);
 }
-#wrapper > .color_r {
+#wrapper > .color_nr {
 	background-color: rgba(247, 67, 84, 1);
+}
+#wrapper > .color_r {
+	background-color: rgba(255, 105, 134, 1);
+}
+#wrapper > .color_lr {
+	background-color: rgba(255, 184, 213, 1);
 }
 #wrapper > .color_ar {
 	background-color: rgba(255, 225, 236, 1);
+}
+#wrapper > .color_lp {
+	background-color: rgba(215, 189, 255, 1);
+}
+#wrapper > .color_ap {
+	background-color: rgba(240, 229, 249, 1);
 }
 #wrapper.divided > * {
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0);
