@@ -621,7 +621,7 @@ h5 {
 	line-height: 1;
 }
 h6 {
-	font-size: 1rem;
+	font-size: 1.15rem;
 	line-height: 1;
 }
 hr.mini {
@@ -1037,8 +1037,6 @@ button.large_a_bb::after, .button.large_a_bb::after {
 button.large_a_bb:hover::after, .button.large_a_bb:hover::after {
 	opacity: 1;
 }
-
-
 button.medium, .button.medium {
 	font-size: 0.9rem;
 	height: 3.5rem;
@@ -1138,9 +1136,20 @@ button.secondary:hover, .button.secondary:hover {
 button.secondary:active, .button.secondary:active {
 	background-color: rgba(26, 77, 132, 1);
 }
+button.a_blue, .button.a_blue {
+	background-color: rgba(212, 230, 255, 1);
+	color: rgba(16, 56, 96, 1) !important;
+}
+button.a_blue:hover, .button.a_blue:hover {
+	color: rgba(16, 56, 96, 1) !important;
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.a_blue:active, .button.a_blue:active {
+	background-color: rgba(212, 230, 255, 1);
+	color: rgba(16, 56, 96, 1) !important;
+}
 button.red, .button.red {
 	background-color: rgba(247, 67, 84, 1);
-	box-shadow: none;
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.red:hover, .button.red:hover {
@@ -1152,24 +1161,31 @@ button.red:active, .button.red:active {
 }
 button.purple, .button.purple {
 	background-color: rgba(168, 93, 226, 1);
-	box-shadow: none;
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.purple:hover, .button.purple:hover {
-	background-color: rgba(200, 138, 249, 1);
+	background-color: rgba(96, 31, 153, 1);
 }
 button.purple:active, .button.purple:active {
 	background-color: rgba(168, 93, 226, 1);
 }
+button.a_purple, .button.a_purple {
+	background-color: rgba(230, 222, 252, 1);
+	color: rgba(16, 56, 96, 1) !important;
+}
+button.a_purple:hover, .button.a_purple:hover {
+	background-color: rgba(96, 31, 153, 1);
+}
+button.a_purple:active, .button.a_purple:active {
+	background-color: rgba(230, 222, 252, 1);
+}
 button.w, .button.w {
 	background-color: rgba(255, 255, 255, 1);
 	color: rgba(48, 122, 183, 1) !important;
-	border-radius: 1.75rem !important;
 }
 button.w:hover, .button.w:hover {
 	background-color: rgba(26, 77, 132, 1);
 	color: rgba(255, 255, 255, 1) !important;
-	border-radius: 0.35rem !important;
 }
 button.w:active, .button.w:active {
 	background-color: rgba(70, 130, 250, 1);
@@ -2548,14 +2564,14 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	background-color: rgba(255, 225, 236, 1);
 }
 #wrapper > .color_lp {
-	background-color: rgba(215, 189, 255, 1);
+	background-color: rgba(212, 194, 255, 1);
 }
 #wrapper > .color_ap {
-	background-color: rgba(232, 215, 249, 1);
+	background-color: rgba(234, 225, 249, 1);
 }
 #wrapper > .color_tho_ar_ap {
-	background: #E8D7F9;
-    background: linear-gradient(0deg,rgba(232, 215, 249, 1) 0%, rgba(255, 225, 236, 1) 16%, rgba(255, 225, 236, 1) 84%, rgba(250, 244, 242, 1) 100%);
+	background: rgba(212, 194, 255, 1);
+	background: linear-gradient(0deg, rgba(234, 225, 249, 1) 0%, rgba(255, 225, 236, 1) 16%, rgba(255, 225, 236, 1) 84%, rgba(250, 244, 242, 1) 100%);
 }
 #wrapper.divided > * {
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0);
