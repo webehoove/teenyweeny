@@ -4,10 +4,10 @@
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#C88AF9;}
+	.st1{fill:#601F99;}
 </style>
 <circle class="st0" cx="100" cy="100" r="85"/>
 <g>
-	<path class="st1" d="M110.802,91.634L90.472,59.79h19.7L135,100l-24.828,40.21h-19.7l20.33-31.844H71V91.634H110.802z"/>
+	<path class="st1" d="M110.8,91.6L90.5,59.8h19.7L135,100l-24.8,40.2H90.5l20.3-31.8H71V91.6H110.8z"/>
 </g>
 </svg>
