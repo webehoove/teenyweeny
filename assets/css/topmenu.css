@@ -179,11 +179,32 @@
 	padding: 0 1rem;
 	border-radius: 1.5rem;
 }
+.wrapper_menu .title.color_bg_db a {
+	background-color: rgba(16, 56, 96, 1);
+}
+.wrapper_menu .title.color_bg_mb a {
+	background-color: rgba(26, 77, 132, 1);
+}
 .wrapper_menu .title.color_bg_red a {
 	background-color: rgba(247, 67, 84, 1);
 }
-.wrapper_menu ul li a:hover {
-	color: rgba(26, 77, 132, 1)
+.wrapper_menu .title.color_bg_purple a {
+	background-color: rgba(168, 93, 226, 1);
+}
+.wrapper_menu .title.color_bg_lb a {
+	background-color: rgba(166, 217, 255, 1);
+	color: rgba(26, 77, 132, 1);
+}
+.wrapper_menu .color_bg_ab a {
+	background-color: rgba(222, 235, 255, 1);
+	color: rgba(26, 77, 132, 1);
+}
+.wrapper_menu .color_bg_lpurple a {
+	background-color: rgba(215, 189, 255, 1);
+}
+.wrapper_menu .color_bg_w a {
+	background-color: rgba(255, 255, 255, 1);
+	color: rgba(26, 77, 132, 1);
 }
 input[type="checkbox"] {
 	display: none;

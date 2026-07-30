@@ -145,6 +145,9 @@ ul.goup li {
 .dropbtn:hover {
 	background-image: url(../../imgs/icons/icon_arrow_down_drop_but_w.svg);
 }
+.dropbtn.invert {
+	background-image: url(../../imgs/icons/icon_arrow_down_drop_but_w.svg);
+}
 
 /* Hide the dropdown menu by default */
 .dropdown-content {

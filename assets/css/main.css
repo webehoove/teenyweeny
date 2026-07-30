@@ -937,7 +937,8 @@ button.large_a::after, .button.large_a::after {
 }
 button.large_a:hover::after, .button.large_a:hover::after {
 	opacity: 1;
-}button.large_a_red, .button.large_a_red {
+}
+button.large_a_red, .button.large_a_red {
 	background-image: url(../../imgs/icons/icon_arrow_right_but_red.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
@@ -960,7 +961,7 @@ button.large_a_red::after, .button.large_a_red::after {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../../imgs/icons/icon_arrow_right_but_red_d.svg);
+	background-image: url(../../imgs/icons/icon_arrow_right_but_red_hover.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Matches base button arrow alignment */
 	opacity: 0;
@@ -970,6 +971,74 @@ button.large_a_red::after, .button.large_a_red::after {
 button.large_a_red:hover::after, .button.large_a_red:hover::after {
 	opacity: 1;
 }
+button.large_a_purple, .button.large_a_purple {
+	background-image: url(../../imgs/icons/icon_arrow_right_but_purple.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
+	position: relative;
+	font-size: 1.1rem;
+	width: 50%;
+	height: 4.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 2.25rem;
+	padding: 0 2rem;
+	z-index: 1;
+	overflow: hidden;
+}
+button.large_a_purple::after, .button.large_a_purple::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../../imgs/icons/icon_arrow_right_but_purple_hover.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Matches base button arrow alignment */
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	z-index: -1;
+}
+button.large_a_purple:hover::after, .button.large_a_purple:hover::after {
+	opacity: 1;
+}
+button.large_a_bb, .button.large_a_bb {
+	background-image: url(../../imgs/icons/icon_arrow_right_but_bb.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
+	position: relative;
+	font-size: 1.1rem;
+	width: 50%;
+	height: 4.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 2.25rem;
+	padding: 0 2rem;
+	z-index: 1;
+	overflow: hidden;
+}
+button.large_a_bb::after, .button.large_a_bb::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../../imgs/icons/icon_arrow_right_but_bb_hover.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Matches base button arrow alignment */
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	z-index: -1;
+}
+button.large_a_bb:hover::after, .button.large_a_bb:hover::after {
+	opacity: 1;
+}
+
+
 button.medium, .button.medium {
 	font-size: 0.9rem;
 	height: 3.5rem;
@@ -1075,35 +1144,34 @@ button.red, .button.red {
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.red:hover, .button.red:hover {
-	background-color: rgba(188, 0, 36, 1);
+	background-color: rgba(255, 105, 134, 1);
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.red:active, .button.red:active {
 	background-color: rgba(247, 67, 84, 1);
 }
-button.forth, .button.forth {
-	background-color: rgba(255, 255, 255, 1);
+button.purple, .button.purple {
+	background-color: rgba(168, 93, 226, 1);
 	box-shadow: none;
-	color: rgba(30, 34, 84, 1) !important;
-}
-button.forth:hover, .button.forth:hover {
-	background-color: rgba(70, 130, 250, 1);
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.forth:active, .button.forth:active {
-	background-color: rgba(70, 130, 250, 1);
+button.purple:hover, .button.purple:hover {
+	background-color: rgba(200, 138, 249, 1);
 }
-button.fifth, .button.fifth {
+button.purple:active, .button.purple:active {
+	background-color: rgba(168, 93, 226, 1);
+}
+button.w, .button.w {
 	background-color: rgba(255, 255, 255, 1);
-	box-shadow: none;
-	color: rgba(30, 34, 84, 1) !important;
+	color: rgba(48, 122, 183, 1) !important;
 	border-radius: 1.75rem !important;
 }
-button.fifth:hover, .button.fifth:hover {
-	background-color: rgba(70, 130, 250, 1);
+button.w:hover, .button.w:hover {
+	background-color: rgba(26, 77, 132, 1);
 	color: rgba(255, 255, 255, 1) !important;
+	border-radius: 0.35rem !important;
 }
-button.fifth:active, .button.fifth:active {
+button.w:active, .button.w:active {
 	background-color: rgba(70, 130, 250, 1);
 }
  @media screen and (max-width: 736px) {
@@ -1115,7 +1183,7 @@ input[type="submit"].large, input[type="reset"].large, input[type="button"].larg
 	justify-content: center;
 	padding: 0 1.5rem;
 }
-button.large_a, .button.large_a {
+button.large_a, .button.large_a, button.large_a_red, .button.large_a_red, .button.large_a_purple, .button.large_a_bb {
 	width: 100%;
 }
 input[type="submit"].small, input[type="reset"].small, input[type="button"].small, button.small, .button.small {
@@ -2483,7 +2551,11 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	background-color: rgba(215, 189, 255, 1);
 }
 #wrapper > .color_ap {
-	background-color: rgba(240, 229, 249, 1);
+	background-color: rgba(232, 215, 249, 1);
+}
+#wrapper > .color_tho_ar_ap {
+	background: #E8D7F9;
+    background: linear-gradient(0deg,rgba(232, 215, 249, 1) 0%, rgba(255, 225, 236, 1) 16%, rgba(255, 225, 236, 1) 84%, rgba(250, 244, 242, 1) 100%);
 }
 #wrapper.divided > * {
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0);
