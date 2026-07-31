@@ -686,7 +686,7 @@ a:active, a:visited:active {
 	align-items: center;
 }
 .text_link_icon li.a_right {
-	margin-left: 0.5rem;
+	margin-left: 0.25rem;
 }
 .text_link_icon li.a_right img.r_icon {
 	width: 1.75rem;
@@ -1015,39 +1015,6 @@ button.large_a_purple::after, .button.large_a_purple::after {
 button.large_a_purple:hover::after, .button.large_a_purple:hover::after {
 	opacity: 1;
 }
-button.large_a_bb, .button.large_a_bb {
-	background-image: url(../../imgs/icons/icon_arrow_right_but_bb.svg);
-	background-repeat: no-repeat;
-	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
-	position: relative;
-	font-size: 1.1rem;
-	width: 50%;
-	height: 4.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	border-radius: 2.25rem;
-	padding: 0 2rem;
-	z-index: 1;
-	overflow: hidden;
-}
-button.large_a_bb::after, .button.large_a_bb::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url(../../imgs/icons/icon_arrow_right_but_bb_hover.svg);
-	background-repeat: no-repeat;
-	background-position: right center; /* Matches base button arrow alignment */
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	z-index: -1;
-}
-button.large_a_bb:hover::after, .button.large_a_bb:hover::after {
-	opacity: 1;
-}
 button.medium, .button.medium {
 	font-size: 0.9rem;
 	height: 3.5rem;
@@ -1063,7 +1030,7 @@ button.medium:hover, .button.medium:hover {
 	border-radius: 0.5rem;
 }
 button.medium_a, .button.medium_a {
-	background-image: url(../../imgs/icons/icon_download_right_but_ao.svg);
+	background-image: url(../../imgs/icons/icon_download_right_but_db_tho.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
 	position: relative;
@@ -1085,7 +1052,7 @@ button.medium_a::after, .button.medium_a::after {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../../imgs/icons/icon_download_right_but_b.svg);
+	background-image: url(../../imgs/icons/icon_download_right_but_db_w.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Matches base button arrow alignment */
 	opacity: 0;
@@ -1147,15 +1114,26 @@ button.secondary:hover, .button.secondary:hover {
 button.secondary:active, .button.secondary:active {
 	background-color: rgba(10, 80, 120, 1);
 }
-button.a_blue, .button.a_blue {
+button.a_dblue, .button.a_dblue {
+	background-color: rgba(10, 80, 126, 1);
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.a_dblue:hover, .button.a_dblue:hover {
+	background-color: rgba(10, 80, 126, 1) !important;
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.a_dblue:active, .button.a_dblue:active {
+	background-color: rgba(10, 80, 126, 1);
+}
+button.a_lblue, .button.a_lblue {
 	background-color: rgba(197, 230, 255, 1);
 	color: rgba(10, 80, 120, 1) !important;
 }
-button.a_blue:hover, .button.a_blue:hover {
-	color: rgba(16, 56, 96, 1) !important;
+button.a_lblue:hover, .button.a_lblue:hover {
+	color: rgba(10, 80, 120, 1) !important;
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.a_blue:active, .button.a_blue:active {
+button.a_lblue:active, .button.a_lblue:active {
 	background-color: rgba(197, 230, 255, 1);
 	color: rgba(10, 80, 120, 1) !important;
 }
@@ -1180,14 +1158,14 @@ button.purple:hover, .button.purple:hover {
 button.purple:active, .button.purple:active {
 	background-color: rgba(168, 93, 226, 1);
 }
-button.a_purple, .button.a_purple {
+button.a_lpurple, .button.a_lpurple {
 	background-color: rgba(230, 222, 252, 1);
 	color: rgba(16, 56, 96, 1) !important;
 }
-button.a_purple:hover, .button.a_purple:hover {
+button.a_lpurple:hover, .button.a_lpurple:hover {
 	background-color: rgba(96, 31, 153, 1);
 }
-button.a_purple:active, .button.a_purple:active {
+button.a_lpurple:active, .button.a_lpurple:active {
 	background-color: rgba(230, 222, 252, 1);
 }
 button.w, .button.w {

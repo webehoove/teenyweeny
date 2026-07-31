@@ -80,7 +80,7 @@
 	position: absolute;
 	top: 0;
 	width: 60%;
-	border-bottom: 2px solid rgba(26, 77, 132, 1);
+	border-bottom: 2px solid rgba(10, 80, 126, 1);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btnb span, .menu-btnb:before, .menu-btnb:after {
@@ -90,7 +90,7 @@
 	position: absolute;
 	top: 0;
 	width: 60%;
-	border-bottom: 2px solid rgba(26, 77, 132, 1);
+	border-bottom: 2px solid rgba(10, 80, 126, 1);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btn:before {
@@ -121,11 +121,11 @@
 }
 #active:checked + .menu-btn:before {
 	transform: rotate(45deg);
-	border-color: rgba(26, 77, 132, 1);
+	border-color: rgba(10, 80, 126, 1);
 }
 #active:checked + .menu-btn:after {
 	transform: rotate(-45deg);
-	border-color: rgba(26, 77, 132, 1);
+	border-color: rgba(10, 80, 126, 1);
 }
 /* closing animation */
 #active:checked + .menu-btnb span {
@@ -133,11 +133,11 @@
 }
 #active:checked + .menu-btnb:before {
 	transform: rotate(45deg);
-	border-color: rgba(26, 77, 132, 1);
+	border-color: rgba(10, 80, 126, 1);
 }
 #active:checked + .menu-btnb:after {
 	transform: rotate(-45deg);
-	border-color: rgba(26, 77, 132, 1);
+	border-color: rgba(10, 80, 126, 1);
 }
 .wrapper_menu ul {
 	position: relative;
@@ -157,8 +157,8 @@
 	outline: none !important;
 	position: relative;
 	display: inline-block;
-	background-color: rgba(166, 217, 255, 1);
-	color: rgba(26, 77, 132, 1);
+	background-color: rgba(197, 230, 255, 1);
+	color: rgba(10, 80, 126, 1);
 	font-size: 1.35rem;
 	line-height: 2.25;
 	height: 3rem;
@@ -170,7 +170,7 @@
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .wrapper_menu .title a {
-	background-color: rgba(55, 117, 180, 1);
+	background-color: rgba(43, 122, 176, 1);
 	color: rgba(255, 255, 255, 1);
 	font-size: 1.35rem;
 	line-height: 2.25;
@@ -180,10 +180,14 @@
 	border-radius: 1.5rem;
 }
 .wrapper_menu .title.color_bg_db a {
-	background-color: rgba(16, 56, 96, 1);
+	background-color: rgba(10, 80, 126, 1);
 }
 .wrapper_menu .title.color_bg_mb a {
-	background-color: rgba(26, 77, 132, 1);
+	background-color: rgba(15, 96, 138, 1);
+}
+.wrapper_menu .title.color_bg_lb a {
+	background-color: rgba(159, 218, 253, 1);
+	color: rgba(10, 80, 126, 1);
 }
 .wrapper_menu .title.color_bg_red a {
 	background-color: rgba(247, 67, 84, 1);
@@ -191,20 +195,20 @@
 .wrapper_menu .title.color_bg_purple a {
 	background-color: rgba(168, 93, 226, 1);
 }
-.wrapper_menu .title.color_bg_lb a {
-	background-color: rgba(166, 217, 255, 1);
-	color: rgba(26, 77, 132, 1);
+.wrapper_menu .color_bg_db a {
+	background-color: rgba(10, 80, 126, 1);
+	color: rgba(255, 255, 255, 1);
 }
 .wrapper_menu .color_bg_ab a {
-	background-color: rgba(212, 230, 255, 1);
-	color: rgba(26, 77, 132, 1);
+	background-color: rgba(197, 230, 255, 1);
+	color: rgba(10, 80, 126, 1);
 }
 .wrapper_menu .color_bg_apurple a {
 	background-color: rgba(230, 222, 252, 1);
 }
 .wrapper_menu .color_bg_w a {
 	background-color: rgba(255, 255, 255, 1);
-	color: rgba(26, 77, 132, 1);
+	color: rgba(10, 80, 126, 1);
 }
 input[type="checkbox"] {
 	display: none;
