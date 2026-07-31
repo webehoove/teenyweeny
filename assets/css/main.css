@@ -917,7 +917,7 @@ button.large, .button.large {
 	text-align: center;
 }
 button.large_a, .button.large_a {
-	background-image: url(../../imgs/icons/icon_arrow_right_but_ao.svg);
+	background-image: url(../../imgs/icons/icon_arrow_right_but_nb_tho.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
 	position: relative;
@@ -939,7 +939,7 @@ button.large_a::after, .button.large_a::after {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../../imgs/icons/icon_arrow_right_but_b.svg);
+	background-image: url(../../imgs/icons/icon_arrow_right_but_db_w.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Matches base button arrow alignment */
 	opacity: 0;
@@ -1199,7 +1199,7 @@ button.w:hover, .button.w:hover {
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.w:active, .button.w:active {
-	background-color: rgba(70, 130, 250, 1);
+	background-color: rgba(255, 255, 255, 1);
 }
  @media screen and (max-width: 736px) {
 input[type="submit"].large, input[type="reset"].large, input[type="button"].large, button.large, .button.large {
@@ -2374,7 +2374,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	overflow-x: hidden;
 }
 #wrapper > .invert {
-	background-color: rgba(10, 42, 68, 1);
+	background-color: rgba(10, 80, 128, 1);
 	color: rgba(255, 255, 255, 1);
 }
 #wrapper > .invert input, #wrapper > .invert select, #wrapper > .invert textarea {
@@ -2472,32 +2472,6 @@ body.is-preload .banner.onload-image-fade-in .image img {
 #wrapper > .invert .button.red:active {
 	background-color: rgba(255, 184, 213, 1);
 }
-#wrapper > .invert input[type="submit"].forth, #wrapper > .invert input[type="reset"].forth, #wrapper > .invert input[type="button"].forth, #wrapper > .invert .button.forth {
-	background-color: transparent;
-	box-shadow: none;
-	color: #fff !important;
-}
-#wrapper > .invert input[type="submit"].forth:hover, #wrapper > .invert input[type="reset"].forth:hover, #wrapper > .invert input[type="button"].forth:hover, #wrapper > .invert .button.forth:hover {
-	background-color: rgba(70, 130, 250, 1);
-	color: #fff !important;
-}
-#wrapper > .invert input[type="submit"].forth:active, #wrapper > .invert input[type="reset"].forth:active, #wrapper > .invert input[type="button"].forth:active, #wrapper > .invert .button.forth:active {
-	background-color: rgba(70, 130, 250, 1);
-	color: rgba(255, 255, 255, 1);
-}
-#wrapper > .invert input[type="submit"].fifth, #wrapper > .invert input[type="reset"].fifth, #wrapper > .invert input[type="button"].fifth, #wrapper > .invert .button.fifth {
-	background-color: rgba(255, 255, 255, 1);
-	box-shadow: none;
-	color: rgba(4, 30, 70, 1) !important;
-}
-#wrapper > .invert input[type="submit"].fifth:hover, #wrapper > .invert input[type="reset"].fifth:hover, #wrapper > .invert input[type="button"].fifth:hover, #wrapper > .invert .button.fifth:hover {
-	background-color: rgba(70, 130, 250, 1);
-	color: #fff !important;
-}
-#wrapper > .invert input[type="submit"].fifth:active, #wrapper > .invert input[type="reset"].fifth:active, #wrapper > .invert input[type="button"].fifth:active, #wrapper > .invert .button.fifth:active {
-	background-color: rgba(70, 130, 250, 1);
-	color: rgba(255, 255, 255, 1);
-}
 #wrapper > .invert label {
 	color: #fff;
 }
@@ -2539,7 +2513,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	background-color: rgba(250, 249, 249, 1);
 }
 #wrapper > .color_db {
-	background-color: rgba(10, 80, 120, 1);
+	background-color: rgba(10, 80, 128, 1);
 }
 #wrapper > .color_mb {
 	background-color: rgba(15, 96, 138, 1);
