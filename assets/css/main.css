@@ -251,7 +251,7 @@ html {
 }
 body {
 	background-color: rgba(251, 249, 249, 1);
-	color: rgba(10, 65, 103, 1);
+	color: rgba(10, 80, 120, 1);
 }
 body, input, select, textarea {
 	font-family: "TWE Md", Helvetica, sans-serif;
@@ -361,10 +361,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /* Text Color */
 
 .t_color_db {
-	color: rgba(10, 65, 103, 1);
+	color: rgba(10, 80, 120, 1, 1);
 }
 .t_color_mb {
-	color: rgba(12, 83, 127, 1);
+	color: rgba(15, 96, 138, 1);
 }
 .t_color_nb {
 	color: rgba(43, 122, 176, 1);
@@ -511,15 +511,15 @@ hr.block_space {
 	margin: 6rem 0;
 }
 hr.lineer {
-	border-bottom: 2px solid rgba(93, 178, 237, 1);
+	border-bottom: 2px solid rgba(15, 186, 232, 1);
 	margin: 3rem 0;
 }
 hr.lineer_small {
-	border-bottom: 2px solid rgba(93, 178, 237, 1);
+	border-bottom: 2px solid rgba(15, 186, 232, 1);
 	margin: 1rem 0;
 }
 hr.lineer_zero {
-	border-bottom: 2px solid rgba(93, 178, 237, 1);
+	border-bottom: 2px solid rgba(15, 186, 232, 1);
 	margin: 1rem 0;
 }
 .align-left {
@@ -672,13 +672,13 @@ a:active, a:visited:active {
 }
 .text_link a {
 	color: inherit;
-	border-bottom: 1px solid rgba(16, 56, 96, 1);
+	border-bottom: 1px solid rgba(10, 80, 120, 1);
 }
 .text_link a:hover {
-	color: rgba(70, 130, 250, 1);
+	color: rgba(43, 122, 176, 1);
 }
 .text_link a:active, .text_link a:visited:active {
-	color: rgba(70, 130, 250, 1);
+	color: rgba(10, 65, 103, 1);
 }
 .text_link_icon {
 	position: relative;
@@ -1115,49 +1115,49 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 	pointer-events: none;
 }
 input[type="submit"], input[type="reset"], input[type="button"], button, .button {
-	background-color: rgba(55, 117, 180, 1);
+	background-color: rgba(43, 122, 176, 1);
 	color: rgba(255, 255, 255, 1) !important;
 }
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover {
-	background-color: rgba(26, 77, 132, 1);
+	background-color: rgba(10, 80, 120, 1);
 }
 input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, button:active, .button:active {
-	background-color: rgba(55, 117, 180, 1);
+	background-color: rgba(43, 122, 176, 1);
 }
 primary, button.primary, .button.primary {
-	background-color: rgba(166, 217, 255, 1);
+	background-color: rgba(159, 218, 253, 1);
 	box-shadow: none;
-	color: rgba(16, 56, 96, 1) !important;
+	color: rgba(10, 80, 120, 1) !important;
 }
 button.primary:hover, .button.primary:hover {
-	background-color: rgba(26, 77, 132, 1);
+	background-color: rgba(10, 80, 120, 1);
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.primary:active, .button.primary:active {
-	background-color: rgba(93, 178, 237, .25);
-	color: rgba(16, 56, 96, 1) !important;
+	background-color: rgba(159, 218, 253, 1);
+	color: rgba(10, 80, 120, 1) !important;
 }
 button.secondary, .button.secondary {
-	background-color: rgba(26, 77, 132, 1);
+	background-color: rgba(0, 0, 0, 1);
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.secondary:hover, .button.secondary:hover {
-	background-color: rgba(93, 178, 237, 1);
+	background-color: rgba(43, 122, 176, 1);
 }
 button.secondary:active, .button.secondary:active {
-	background-color: rgba(26, 77, 132, 1);
+	background-color: rgba(10, 80, 120, 1);
 }
 button.a_blue, .button.a_blue {
-	background-color: rgba(212, 230, 255, 1);
-	color: rgba(16, 56, 96, 1) !important;
+	background-color: rgba(197, 230, 255, 1);
+	color: rgba(10, 80, 120, 1) !important;
 }
 button.a_blue:hover, .button.a_blue:hover {
 	color: rgba(16, 56, 96, 1) !important;
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.a_blue:active, .button.a_blue:active {
-	background-color: rgba(212, 230, 255, 1);
-	color: rgba(16, 56, 96, 1) !important;
+	background-color: rgba(197, 230, 255, 1);
+	color: rgba(10, 80, 120, 1) !important;
 }
 button.red, .button.red {
 	background-color: rgba(247, 67, 84, 1);
@@ -2539,10 +2539,10 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	background-color: rgba(250, 249, 249, 1);
 }
 #wrapper > .color_db {
-	background-color: rgba(10, 65, 103, 1);
+	background-color: rgba(10, 80, 120, 1);
 }
 #wrapper > .color_mb {
-	background-color: rgba(12, 83, 127, 1);
+	background-color: rgba(15, 96, 138, 1);
 }
 #wrapper > .color_nb {
 	background-color: rgba(43, 122, 176, 1);
@@ -2554,7 +2554,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	background-color: rgba(159, 218, 253, 1);
 }
 #wrapper > .color_ab {
-	background-color: rgba(187, 230, 255, 1);
+	background-color: rgba(197, 230, 255, 1);
 }
 #wrapper > .color_dr {
 	background-color: rgba(121, 15, 53, 1);
