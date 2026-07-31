@@ -4,12 +4,11 @@
 	 viewBox="0 0 208 208" style="enable-background:new 0 0 208 208;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#0A507E;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:10;}
-	.st2{fill:none;stroke:#FFFFFF;stroke-width:10;stroke-linejoin:round;}
+	.st1{fill:#FFFFFF;}
 </style>
 <circle class="st0" cx="104" cy="104" r="103.5"/>
 <g>
-	<polyline class="st1" points="65.5,107.4 104,68.9 142.5,107.4 	"/>
-	<line class="st2" x1="104" y1="147.8" x2="104" y2="74.3"/>
+	<path class="st1" d="M93.597,93.134L54,121.447V94.012l50-34.578l50,34.578v27.435l-39.597-28.313v55.432H93.598L93.597,93.134
+		L93.597,93.134z"/>
 </g>
 </svg>
