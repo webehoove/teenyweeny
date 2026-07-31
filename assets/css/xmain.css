@@ -233,7 +233,7 @@ ul.goup li {
 	top: -0.1rem;
 }
 .logotype_lockup_b_d li.symbol_b {
-	width: 12rem;
+	width: 9rem;
 }
 ul.bottommenu {
 	padding-bottom: 2rem;
@@ -258,13 +258,6 @@ ul.bottommenu_hor li {
 }
 }
  @media screen and (max-width: 736px) {
-.logotype_lockup_b_d li.symbol_b {
-	width: 12rem;
-	padding-right: 0rem;
-}
-.logotype_lockup_b_d li.wm_b {
-	font-size: 3.2rem;
-}
 ul.sm_sym {
 	border: none;
 	padding: 0;
