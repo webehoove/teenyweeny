@@ -55,7 +55,7 @@ video {
         </div>
         <div class="menumob col-1 col-12-small">
           <input type="checkbox" id="active" name="x">
-          <label for="active" id="menubut" class="menu-btn"></label>
+          <label for="active" id="menubut" class="menu-btnb"></label>
           <label class="close"></label>
           <div class="wrapper_menu requires-no-scroll">
             <ul class="md_tx">
@@ -243,9 +243,9 @@ video {
           <hr class="block1">
         </div>
         <div class="col-5 col-11-small">
-          <p class="md_tx">Визуальное оформление бренда включает в себя обзор элементов дизайна, которые в совокупности создают фирменный стиль, а также инструкции по их использованию.</p>
+          <p>Визуальное оформление бренда включает в себя обзор элементов дизайна, которые в совокупности создают фирменный стиль, а также инструкции по их использованию.</p>
           <hr>
-          <p class="md_tx">Дизайн система динамична и выразительна, а единое и продуманное выражение этих основных и вспомогательных элементов имеет важное значение для создания дизайна высокого качества.</p>
+          <p>Дизайн система динамична и выразительна, а единое и продуманное выражение этих основных и вспомогательных элементов имеет важное значение для создания дизайна высокого качества.</p>
           <hr class="block2">
         </div>
       </div>
@@ -599,39 +599,6 @@ $(function() {
         }
     });
   
-});
-var initialSrc = "imgs/brand/twe_logotype_db_r_db_0.svg";
-var scrollSrc = "imgs/brand/twe_logotype_db_r_db_0.svg";
-$(window).scroll(function() {
-   var value = $(this).scrollTop();
-   if (value > 100)
-      $(".logo").attr("src", scrollSrc);
-   else
-      $(".logo").attr("src", initialSrc);
-});
-$(function() {
-    var header = $("#logo_wm");
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 100) {
-            header.removeClass('logotype_wm_w').addClass("logotype_wm_db");
-        } else {
-            header.removeClass("logotype_wm_db").addClass('logotype_wm_w');
-        }
-    });
-});
-$(function() {
-    var header = $("#menubut");
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 100) {
-            header.removeClass('menu-btn').addClass("menu-btnb");
-        } else {
-            header.removeClass("menu-btnb").addClass('menu-btn');
-        }
-    });
 });
 </script> 
 <script>
