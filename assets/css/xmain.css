@@ -7,11 +7,11 @@
 	z-index: 4;
 }
 .scrolled {
-	background-color: rgba(242, 239, 248, 1);
+	background-color: rgba(244, 240, 240, 1);
 	transition: 0.3s;
 }
 .logotype_lockup_t {
-	width: 14rem;
+	width: 12rem;
 	transform: scale(1);
 }
 .logotype_lockup_b {
@@ -100,23 +100,6 @@ ul.bottommenu_hor li {
 .goup a:active .goup a:visited {
 	opacity: .6;
 }
-ul.sm_sym {
-	border-top: 2px solid rgba(93, 178, 237, .5);
-	padding: 2rem 0;
-}
-.sm_sym a {
-	-moz-transition: 0.2s ease-in-out;
-	-webkit-transition: 0.2s ease-in-out;
-	-ms-transition: 0.2s ease-in-out;
-	transition: 0.2s ease-in-out;
-	opacity: 1;
-}
-.sm_sym a:hover {
-	opacity: .6;
-}
-.sm_sym a:active .goup a:visited {
-	opacity: 1;
-}
 ul.goup li {
 	padding: 0.25rem 0.5rem 1rem 0;
 }
@@ -178,8 +161,10 @@ ul.goup li {
 /* Change button color when the dropdown is active */
 .dropdown:hover .dropbtn {
 }
-}
  @media screen and (max-width: 1366px) {
+.logotype_lockup_t {
+	width: 12rem;
+}
 }
  @media screen and (max-width: 1180px) {
 .menumob {
