@@ -1,5 +1,65 @@
 :root {
+  --primary-bblue: rgba(14, 45, 74, 1); 
+}
+:root {
   --primary-dblue: rgba(10, 65, 108, 1); 
+}
+:root {
+  --primary-mblue: rgba(15, 92, 138, 1); 
+}
+:root {
+  --primary-nblue: rgba(43, 122, 176, 1); 
+}
+:root {
+  --primary-blue: rgba(15, 186, 238, 1); 
+}
+:root {
+  --primary-lblue: rgba(159, 218, 253, 1); 
+}
+:root {
+  --primary-ablue: rgba(197, 230, 255, 1); 
+}
+:root {
+  --primary-dred: rgba(130, 0, 43, 1); 
+}
+:root {
+  --primary-mred: rgba(188, 0, 36, 1); 
+}
+:root {
+  --primary-nred: rgba(247, 67, 84, 1); 
+}
+:root {
+  --primary-red: rgba(255, 105, 134, 1); 
+}
+:root {
+  --primary-lred: rgba(255, 192, 227, 1); 
+}
+:root {
+  --primary-ared: rgba(255, 227, 244, 1); 
+}
+:root {
+  --primary-dpurple: rgba(96, 31, 153, 1); 
+}
+:root {
+  --primary-mpurple: rgba(128, 55, 181, 1); 
+}
+:root {
+  --primary-npurple: rgba(168, 93, 226, 1); 
+}
+:root {
+  --primary-purple: rgba(200, 138, 249, 1); 
+}
+:root {
+  --primary-lpurple: rgba(204, 187, 255, 1); 
+}
+:root {
+  --primary-apurple: rgba(230, 222, 252, 1); 
+}
+:root {
+  --primary-tho: rgba(250, 249, 249, 1); 
+}
+:root {
+  --primary-thd: rgba(244, 240, 240, 1); 
 }
 /*___________Title______________*/
 @font-face {
@@ -250,7 +310,7 @@ html {
 }
 }
 body {
-	background-color: rgba(244, 240, 240, 1);
+	background-color: var(--primary-tho);
 	color: var(--primary-dblue);
 }
 body, input, select, textarea {
@@ -364,19 +424,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: var(--primary-dblue);
 }
 .t_color_mb {
-	color: rgba(15, 96, 138, 1);
+	color: var(--primary-mblue);
 }
 .t_color_nb {
-	color: rgba(43, 122, 176, 1);
+	color: var(--primary-nblue);
 }
 .t_color_b {
-	color: rgba(15, 186, 238, 1);
+	color: var(--primary-blue);
 }
 .t_color_lb {
-	color: rgba(159, 218, 253, 1);
+	color: var(--primary-lblue);
 }
 .t_color_ab {
-	color: rgba(197, 230, 255, 1);
+	color: var(--primary-ablue);
 }
 .t_color_nr {
 	color: rgba(247, 67, 84, 1);
@@ -507,15 +567,11 @@ hr.block_space {
 	margin: 6rem 0;
 }
 hr.lineer {
-	border-bottom: 2px solid rgba(15, 186, 232, 1);
+	border-bottom: 2px solid var(--primary-blue);
 	margin: 3rem 0;
 }
 hr.lineer_small {
-	border-bottom: 2px solid rgba(15, 186, 232, 1);
-	margin: 1rem 0;
-}
-hr.lineer_zero {
-	border-bottom: 2px solid rgba(15, 186, 232, 1);
+	border-bottom: 2px solid var(--primary-blue);
 	margin: 1rem 0;
 }
 .align-left {
@@ -794,7 +850,7 @@ a:active, a:visited:active {
 .box_grid .block_inside  {
 	display: flex;
 	flex-direction: column;
-	width: 7%;
+	width: 10%;
 	padding: 0;
 	line-height: 1.5;
 	border-radius: 0;
@@ -802,7 +858,7 @@ a:active, a:visited:active {
 .box_grid .block_inside_minispace  {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 40%;
 	padding: 0;
 	line-height: 1.5;
 	border-radius: 0;
@@ -819,19 +875,19 @@ a:active, a:visited:active {
 	color: rgba(255, 255, 255, 1);
 }
 .color_box_mb {
-	background-color: rgba(15, 96, 138, 1);
+	background-color: var(--primary-mblue);
 }
 .color_box_nb {
-	background-color: rgba(43, 122, 176, 1);
+	background-color: var(--primary-nblue);
 }
 .color_box_b {
-	background-color: rgba(15, 186, 232, 1);
+	background-color: var(--primary-blue);
 }
 .color_box_lb {
-	background-color: rgba(159, 218, 253, 1);
+	background-color: var(--primary-lblue);
 }
 .color_box_ab {
-	background-color: rgba(197, 230, 255, 1);
+	background-color: var(--primary-ablue);
 }
 .color_box_nr {
 	background-color: rgba(247, 67, 84, 1);
@@ -1022,7 +1078,7 @@ button.large_a_red::after, .button.large_a_red::after {
 button.large_a_red:hover::after, .button.large_a_red:hover::after {
 	opacity: 1;
 }
-button.large_a_purple, .button.large_a_purple {
+button.large_a_npurple, .button.large_a_npurple {
 	background-image: url(../../imgs/icons/icon_arrow_right_but_purple.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
@@ -1038,7 +1094,7 @@ button.large_a_purple, .button.large_a_purple {
 	z-index: 1;
 	overflow: hidden;
 }
-button.large_a_purple::after, .button.large_a_purple::after {
+button.large_a_npurple::after, .button.large_a_npurple::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -1052,7 +1108,7 @@ button.large_a_purple::after, .button.large_a_purple::after {
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
 }
-button.large_a_purple:hover::after, .button.large_a_purple:hover::after {
+button.large_a_npurple:hover::after, .button.large_a_npurple:hover::after {
 	opacity: 1;
 }
 button.medium, .button.medium {
@@ -1122,18 +1178,17 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 	pointer-events: none;
 }
 input[type="submit"], input[type="reset"], input[type="button"], button, .button {
-	background-color: rgba(43, 122, 176, 1);
+	background-color: var(--primary-nblue);
 	color: rgba(255, 255, 255, 1) !important;
 }
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover {
 	background-color: var(--primary-dblue);
 }
 input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, button:active, .button:active {
-	background-color: rgba(43, 122, 176, 1);
+	background-color: var(--primary-nblue);
 }
 primary, button.primary, .button.primary {
-	background-color: rgba(159, 218, 253, 1);
-	box-shadow: none;
+	background-color: var(--primary-lblue);
 	color: var(--primary-dblue) !important;
 }
 button.primary:hover, .button.primary:hover {
@@ -1141,7 +1196,7 @@ button.primary:hover, .button.primary:hover {
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.primary:active, .button.primary:active {
-	background-color: rgba(159, 218, 253, 1);
+	background-color: var(--primary-nblue);
 	color: var(--primary-dblue) !important;
 }
 button.secondary, .button.secondary {
@@ -1149,7 +1204,7 @@ button.secondary, .button.secondary {
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.secondary:hover, .button.secondary:hover {
-	background-color: rgba(43, 122, 176, 1);
+	background-color: var(--primary-nblue);
 }
 button.secondary:active, .button.secondary:active {
 	background-color: var(--primary-dblue);
@@ -1159,54 +1214,77 @@ button.a_dblue, .button.a_dblue {
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.a_dblue:hover, .button.a_dblue:hover {
-	background-color: rgba(14, 45, 74, 1) !important;
+	background-color: var(--primary-mblue); !important;
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.a_dblue:active, .button.a_dblue:active {
 	background-color: var(--primary-dblue);
 }
-button.a_lblue, .button.a_lblue {
-	background-color: rgba(197, 230, 255, 1);
-	color: rgba(10, 62, 106, 1) !important;
+button.a_llblue, .button.a_llblue {
+	background-color: var(--primary-llblue);
+	color: var(--primary-dblue) !important;
 }
-button.a_lblue:hover, .button.a_lblue:hover {
+button.a_llblue:hover, .button.a_llblue:hover {
 	color: var(--primary-dblue) !important;
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.a_lblue:active, .button.a_lblue:active {
-	background-color: rgba(197, 230, 255, 1);
+button.a_llblue:active, .button.a_llblue:active {
+	background-color: var(--primary-llblue);
 	color: var(--primary-dblue) !important;
 }
+button.a_ablue, .button.a_ablue {
+	background-color: var(--primary-ablue);
+	color: var(--primary-dblue) !important;
+}
+button.a_ablue:hover, .button.a_ablue:hover {
+	color: var(--primary-dblue) !important;
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.a_ablue:active, .button.a_ablue:active {
+	background-color: var(--primary-ablue);
+	color: var(--primary-dblue) !important;
+}
+button.nred, .button.nred {
+	background-color: var(--primary-nred);
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.nred:hover, .button.nred:hover {
+	background-color: var(--primary-red);
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.nred:active, .button.nred:active {
+	background-color: var(--primary-nred);
+}
 button.red, .button.red {
-	background-color: rgba(247, 67, 84, 1);
+	background-color: var(--primary-red);
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.red:hover, .button.red:hover {
-	background-color: rgba(255, 105, 134, 1);
+	background-color: var(--primary-nred);
 	color: rgba(255, 255, 255, 1) !important;
 }
 button.red:active, .button.red:active {
-	background-color: rgba(247, 67, 84, 1);
+	background-color: var(--primary-red);
 }
-button.purple, .button.purple {
-	background-color: rgba(168, 93, 226, 1);
+button.npurple, .button.npurple {
+	background-color: var(--primary-npurple);
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.purple:hover, .button.purple:hover {
-	background-color: rgba(96, 31, 153, 1);
+button.npurple:hover, .button.npurple:hover {
+	background-color: var(--primary-dpurple);
 }
-button.purple:active, .button.purple:active {
-	background-color: rgba(168, 93, 226, 1);
+button.npurple:active, .button.npurple:active {
+	background-color: var(--primary-npurple);
 }
-button.a_lpurple, .button.a_lpurple {
-	background-color: rgba(230, 222, 252, 1);
+button.a_apurple, .button.a_apurple {
+	background-color: var(--primary-apurple);
 	color: rgba(10, 62, 106, 1) !important;
 }
-button.a_lpurple:hover, .button.a_lpurple:hover {
-	background-color: rgba(96, 31, 153, 1);
+button.a_apurple:hover, .button.a_apurple:hover {
+	background-color: var(--primary-dpurple);
 }
-button.a_lpurple:active, .button.a_lpurple:active {
-	background-color: rgba(230, 222, 252, 1);
+button.a_apurple:active, .button.a_apurple:active {
+	background-color: var(--primary-apurple);
 }
 button.w, .button.w {
 	background-color: rgba(255, 255, 255, 1);
@@ -2375,7 +2453,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	overflow-x: hidden;
 }
 #wrapper > .invert {
-	background-color: rgba(14, 45, 74, 1);
+	background-color: var(--primary-bblue);
 	color: rgba(255, 255, 255, 1);
 }
 #wrapper > .invert input, #wrapper > .invert select, #wrapper > .invert textarea {
@@ -2452,50 +2530,46 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	background-color: rgba(255, 255, 255, 1);
 }
 #wrapper > .color_tho {
-	background-color: rgba(244, 240, 240, 1);
+	background-color: var(--primary-tho);
 }
 #wrapper > .color_db {
 	background-color: var(--primary-dblue);
 }
 #wrapper > .color_mb {
-	background-color: rgba(15, 96, 138, 1);
+	background-color: var(--primary-mblue);
 }
 #wrapper > .color_nb {
-	background-color: rgba(43, 122, 176, 1);
+	background-color: var(--primary-nblue);
 }
 #wrapper > .color_b {
-	background-color: rgba(15, 186, 238, 1);
+	background-color: var(--primary-blue);
 }
 #wrapper > .color_lb {
-	background-color: rgba(159, 218, 253, 1);
+	background-color: var(--primary-lblue);
 }
 #wrapper > .color_ab {
-	background-color: rgba(197, 230, 255, 1);
-}
-#wrapper > .color_dr {
-	background-color: rgba(121, 15, 53, 1);
+	background-color: var(--primary-ablue);
 }
 #wrapper > .color_nr {
-	background-color: rgba(247, 67, 84, 1);
+	background-color: var(--primary-nred);
 }
 #wrapper > .color_r {
-	background-color: rgba(255, 105, 134, 1);
+	background-color: var(--primary-red);
 }
 #wrapper > .color_lr {
-	background-color: rgba(255, 192, 227, 1);
+	background-color: var(--primary-lred);
 }
 #wrapper > .color_ar {
-	background-color: rgba(255, 227, 244, 1);
+	background-color: var(--primary-ared);
 }
 #wrapper > .color_lp {
-	background-color: rgba(212, 194, 255, 1);
+	background-color: var(--primary-lpurple);
 }
 #wrapper > .color_ap {
-	background-color: rgba(234, 225, 249, 1);
+	background-color: var(--primary-apurple);
 }
 #wrapper > .color_tho_ar_ap {
-	background: rgba(212, 194, 255, 1);
-	background: linear-gradient(0deg, rgba(234, 225, 249, 1) 0%, rgba(255, 227, 244, 1) 16%, rgba(255, 227, 244, 1) 84%, rgba(244, 240, 240, 1) 100%);
+	background: linear-gradient(0deg, rgba(230, 222, 252, 1) 0%, rgba(255, 227, 244, 1) 16%, rgba(255, 227, 244, 1) 84%, rgba(244, 240, 240, 1) 100%);
 }
 #wrapper.divided > * {
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0);
