@@ -1045,7 +1045,7 @@ button.large_a::after, .button.large_a::after {
 button.large_a:hover::after, .button.large_a:hover::after {
 	opacity: 1;
 }
-button.large_a_red, .button.large_a_red {
+button.large_a_nred, .button.large_a_nred {
 	background-image: url(../../imgs/icons/icon_arrow_right_but_red.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
@@ -1061,7 +1061,7 @@ button.large_a_red, .button.large_a_red {
 	z-index: 1;
 	overflow: hidden;
 }
-button.large_a_red::after, .button.large_a_red::after {
+button.large_a_nred::after, .button.large_a_nred::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -1075,7 +1075,7 @@ button.large_a_red::after, .button.large_a_red::after {
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
 }
-button.large_a_red:hover::after, .button.large_a_red:hover::after {
+button.large_a_nred:hover::after, .button.large_a_nred:hover::after {
 	opacity: 1;
 }
 button.large_a_npurple, .button.large_a_npurple {
@@ -1306,7 +1306,7 @@ input[type="submit"].large, input[type="reset"].large, input[type="button"].larg
 	justify-content: center;
 	padding: 0 1.5rem;
 }
-button.large_a, .button.large_a, button.large_a_red, .button.large_a_red, .button.large_a_purple, .button.large_a_bb {
+button.large_a, .button.large_a, .button.large_a_nred, .button.large_a_npurple {
 	width: 100%;
 }
 input[type="submit"].small, input[type="reset"].small, input[type="button"].small, button.small, .button.small {
@@ -1874,9 +1874,6 @@ body.is-preload .banner.onload-image-fade-in .image img {
 }
 /* Banner (style1) */
 
-
-/* Banner (style2) */
-
 .banner.style1 {
 	padding: 0 2rem;
 	margin: 0 auto;
@@ -1919,7 +1916,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: auto;
-	height: 18svh;
+	height: 24svh;
 }
 .banner.style1 .content.block_bottom {
 	position: absolute;
@@ -1980,6 +1977,9 @@ body.is-preload .banner.onload-image-fade-in .image img {
  @media screen and (max-width: 1366px) {
 .banner.style1 {
 	padding: 0 1.5rem;
+}
+.banner.style1 .content .text_center img {
+	height: 20svh;
 }
 .banner.style1 .content .block_bottom {
 	bottom: 1.5rem;
@@ -2569,7 +2569,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	background-color: var(--primary-apurple);
 }
 #wrapper > .color_tho_ar_ap {
-	background: linear-gradient(0deg, rgba(230, 222, 252, 1) 0%, rgba(255, 227, 244, 1) 16%, rgba(255, 227, 244, 1) 84%, rgba(244, 240, 240, 1) 100%);
+	background: linear-gradient(0deg, rgba(230, 222, 252, 1) 0%, rgba(255, 198, 229, 1) 16%, rgba(255, 198, 229, 1) 84%, rgba(250, 249, 249, 1) 100%);
 }
 #wrapper.divided > * {
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0);
