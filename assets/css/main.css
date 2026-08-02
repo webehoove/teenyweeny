@@ -2648,6 +2648,9 @@ body.is-preload .banner.onload-image-fade-in .image img {
 #wrapper > .invert input, #wrapper > .invert select, #wrapper > .invert textarea {
 	color: rgba(255, 255, 255, 1);
 }
+#wrapper > .invert p {
+	color: var(--primary-dtd);
+}
 #wrapper > .invert a {
 	color: inherit;
 }
