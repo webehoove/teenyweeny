@@ -1478,10 +1478,10 @@ input[type="submit"].small, input[type="reset"].small, input[type="button"].smal
 	display: block;
 }
 .rounded img {
-	border-radius: 2.25rem;
+	border-radius: 2rem;
 }
 .rounded video {
-	border-radius: 2.25rem;
+	border-radius: 2rem;
 }
 .image video {
 	display: block;
@@ -1526,12 +1526,12 @@ input[type="submit"].small, input[type="reset"].small, input[type="button"].smal
 /* List */
 
 ol {
-	list-style: decimal;
+	list-style: inside disc;
 	margin: 0;
 	padding: 0;
 }
 ol li {
-	padding-bottom: 1rem;
+	padding-bottom: 1.5rem;
 }
 ul {
 	list-style: none;
@@ -1542,9 +1542,30 @@ ul li {
 	display: inline-block;
 	padding-right: 0.15rem;
 }
+ul.t_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.t_list li {
+	background-image: url(../../imgs/icons/icon_warning_text_nb.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 1.7rem;
+	font-size: 1.5rem;
+	line-height: 1.15;
+	display: inline-block;
+	padding-left: 2.5rem;
+	margin-bottom: 1.5rem;
+}
  @media screen and (max-width: 736px) {
 ul li {
 	padding-right: 0.1rem;
+}
+ul.t_list li {
+	background-size: 1.5rem;
+	font-size: 1.25rem;
+	line-height: 1.15;
 }
 }
 /* Nav Menu */
@@ -1574,6 +1595,12 @@ ul.side_menu li {
 	list-style: none;
 	display: table;
 	margin-bottom: 1.25rem;
+}
+ul.side_menu li a {
+	color: var(--primary-dblue);
+}
+ul.side_menu li a:hover {
+	color: var(--primary-blue);
 }
 /* Actions */
 
