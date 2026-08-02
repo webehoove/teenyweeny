@@ -193,10 +193,10 @@
 	background-color: var(--primary-nred);
 }
 .wrapper_menu .title.color_bg_purple a {
-	background-color: rgba(168, 93, 226, 1);
+	background-color: var(--primary-npurple);
 }
 .wrapper_menu .color_bg_db a {
-	background-color: rgba(10, 80, 126, 1);
+	background-color: var(--primary-dblue);
 	color: rgba(255, 255, 255, 1);
 }
 .wrapper_menu .color_bg_ab a {

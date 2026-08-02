@@ -5,37 +5,37 @@
  --primary-dblue: rgba(13, 52, 111, 1);
 }
 :root {
- --primary-mblue: rgba(15, 92, 138, 1);
+ --primary-mblue: rgba(25, 74, 132, 1);
 }
 :root {
- --primary-nblue: rgba(43, 122, 176, 1);
+ --primary-nblue: rgba(66, 119, 191, 1);
 }
 :root {
- --primary-blue: rgba(15, 186, 238, 1);
+ --primary-blue: rgba(42, 180, 245, 1);
 }
 :root {
- --primary-lblue: rgba(159, 218, 253, 1);
+ --primary-lblue: rgba(173, 216, 253, 1);
 }
 :root {
- --primary-ablue: rgba(197, 230, 255, 1);
+ --primary-ablue: rgba(212, 235, 255, 1);
 }
 :root {
- --primary-dred: rgba(130, 0, 43, 1);
+ --primary-dred: rgba(145, 38, 64, 1);
 }
 :root {
- --primary-mred: rgba(188, 0, 36, 1);
+ --primary-mred: rgba(200, 49, 72, 1);
 }
 :root {
- --primary-nred: rgba(252, 83, 104, 1);
+ --primary-nred: rgba(253, 75, 95, 1);
 }
 :root {
- --primary-red: rgba(255, 105, 134, 1);
+ --primary-red: rgba(255, 113, 131, 1);
 }
 :root {
- --primary-lred: rgba(255, 198, 229, 1);
+ --primary-lred: rgba(255, 164, 188, 1);
 }
 :root {
- --primary-ared: rgba(255, 227, 244, 1);
+ --primary-ared: rgba(255, 204, 220, 1);
 }
 :root {
  --primary-dorange: rgba(102, 37, 12, 1);
@@ -116,7 +116,7 @@
  --primary-thd: rgba(244, 240, 240, 1);
 }
 :root {
- --primary-bb: rgba(14, 45, 74, 1);
+ --primary-bb: rgba(11, 36, 66, 1);
 }
 /*___________Title______________*/
 @font-face {
