@@ -3,12 +3,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#0A507E;}
+	.st0{fill:#0A416C;}
 </style>
 <g>
-	<rect x="29.3" y="128.6" class="st0" width="111.4" height="12.5"/>
+	<rect x="29.3" y="118.85" class="st0" width="111.4" height="12.5"/>
 	<g>
-		<path class="st0" d="M96.7,85.8L141,57.5v27.4l-56,34.6L29,84.9V57.5l44.3,28.3V30.4h23.3L96.7,85.8L96.7,85.8z"/>
+		<path class="st0" d="M96.7,76.05l44.3-28.3v27.4l-56,34.6l-56-34.6v-27.4l44.3,28.3v-55.4h23.3L96.7,76.05L96.7,76.05z"/>
 	</g>
 </g>
 </svg>
