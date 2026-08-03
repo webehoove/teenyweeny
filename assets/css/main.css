@@ -26,7 +26,7 @@
  --primary-mred: rgba(200, 49, 72, 1);
 }
 :root {
- --primary-nred: rgba(252, 68, 88, 1);
+ --primary-nred: rgba(254, 64, 84, 1);
 }
 :root {
  --primary-red: rgba(255, 113, 131, 1);
@@ -35,7 +35,7 @@
  --primary-lred: rgba(255, 164, 188, 1);
 }
 :root {
- --primary-ared: rgba(255, 204, 220, 1);
+ --primary-ared: rgba(255, 220, 233, 1);
 }
 :root {
  --primary-dorange: rgba(102, 37, 12, 1);
@@ -101,7 +101,7 @@
  --primary-npurple: rgba(168, 93, 226, 1);
 }
 :root {
- --primary-purple: rgba(200, 138, 249, 1);
+ --primary-purple: rgba(193, 131, 252, 1);
 }
 :root {
  --primary-lpurple: rgba(204, 187, 255, 1);
@@ -114,6 +114,9 @@
 }
 :root {
  --primary-thd: rgba(240, 238, 236, 1);
+}
+:root {
+ --primary-thb: rgba(206, 202, 202, 1);
 }
 :root {
  --primary-bb: rgba(11, 36, 66, 1);
@@ -499,14 +502,53 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .t_color_ab {
 	color: var(--primary-ablue);
 }
+.t_color_dr {
+	color: var(--primary-dred);
+}
 .t_color_nr {
 	color: var(--primary-nred);
+}
+.t_color_lr {
+	color: var(--primary-lred);
+}
+.t_color_ar {
+	color: var(--primary-ared);
+}
+.t_color_do {
+	color: var(--primary-dorange);
+}
+.t_color_lo {
+	color: var(--primary-lorange);
+}
+.t_color_lg {
+	color: var(--primary-lgreen);
+}
+.t_color_dp {
+	color: var(--primary-dpurple);
+}
+.t_color_mp {
+	color: var(--primary-mpurple);
+}
+.t_color_np {
+	color: var(--primary-npurple);
+}
+.t_color_p {
+	color: var(--primary-purple);
+}
+.t_color_lp {
+	color: var(--primary-lpurple);
+}
+.t_color_ap {
+	color: var(--primary-apurple);
 }
 .t_color_tho {
 	color: var(--primary-tho);
 }
 .t_color_thd {
 	color: var(--primary-thd);
+}
+.t_color_thb {
+	color: var(--primary-thb);
 }
 .t_color_w {
 	color: rgba(255, 255, 255, 1);
@@ -541,6 +583,10 @@ h1.special_one {
 	font-size: 5.75rem;
 	line-height: 1;
 }
+h1.special_num {
+	font-size: 7rem;
+	line-height: 1;
+}
 h1.special_shift {
 	font-size: 5rem;
 	line-height: 0.8;
@@ -552,10 +598,6 @@ h2 {
 h3 {
 	font-size: 2.25rem;
 	line-height: 1;
-}
-h3.special {
-	font-size: 1.8rem;
-	line-height: 1.15;
 }
 h4 {
 	font-size: 1.5rem;
@@ -727,17 +769,9 @@ h2 {
 	font-size: 2rem;
 	line-height: 1.2;
 }
-h2.special {
-	font-size: 2rem;
-	line-height: 1.1;
-}
 h3 {
 	font-size: 1.5rem;
 	line-height: 1.2;
-}
-h3.special {
-	font-size: 1.35rem;
-	line-height: 1.15;
 }
 h4 {
 	font-size: 1.35rem;
