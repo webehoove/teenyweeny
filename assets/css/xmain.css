@@ -68,6 +68,7 @@ ul.bottommenu li {
 	margin-bottom: 1.65rem;
 }
 ul.bottommenu_hor {
+	color: var(--primary-thd);
 	font-size: 1.25rem;
 	list-style: none;
 	padding: 0;
