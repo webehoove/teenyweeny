@@ -46,24 +46,41 @@ video {
 }
 .side_menu {
   width: 100%;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), top 0.3s ease, opacity 0.3s ease;
-  will-change: transform, top;
+  /* Готовим элемент к плавным трансформациям */
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  will-change: transform;
 }
+
+/* Зафиксированное состояние */
 .side_menu.is-fixed {
   position: fixed;
-  top: 2rem; 
-  width: var(--sidebar-width, 300px);
+  top: 2rem;
+  
+  /* Важно: задаем явную ширину родителя или используем max-width, 
+     чтобы ширина не растягивалась на весь экран */
+  width: var(--sidebar-width, 300px); /* Укажите реальную ширину колонки */
+
+  /* Анимация "выплывания": элемент появляется чуть выше и снижает прозрачность */
   animation: smoothArrival 0.35s ease-out forwards;
 }
+
+/* Фиксация внизу секции */
 .side_menu.is-bottom {
   position: absolute;
   bottom: 0;
   top: auto;
   width: 100%;
 }
-@media (max-width: 1180px) {
-  .side_menu.is-fixed.has-nav {
-    top: 9rem;
+
+/* Ключевые кадры для мягкого появления */
+@keyframes smoothArrival {
+  from {
+    opacity: 0.5;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
@@ -2032,40 +2049,39 @@ var currentScrollPos = window.pageYOffset;
 </script> 
 <script>
 $(function() {
-  var $navbar = $("#navbar");
-  var $logo = $(".logo");
-  var $menuBut = $("#menubut");
-  var $sideMenu = $(".side_menu");
+    var header = $("#navbar");
   
-  var initialSrc = "../../imgs/brand/twe_logotype_w_w_w_0.svg";
-  var scrollSrc = "../../imgs/brand/twe_logotype_db_nr_db_0.svg";
-  var lastScroll = 0;
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 100) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});
 
-  $(window).on('scroll', function() {
-    var scroll = $(this).scrollTop();
-
-    if (scroll >= 100) {
-      $navbar.addClass("scrolled");
-    } else {
-      $navbar.removeClass("scrolled");
-    }
-
-    if (scroll >= 200) {
-      $logo.attr("src", scrollSrc);
-      $menuBut.removeClass('menu-btn').addClass("menu-btnb");
-    } else {
-      $logo.attr("src", initialSrc);
-      $menuBut.removeClass("menu-btnb").addClass('menu-btn');
-    }
-
-    if (scroll < lastScroll && scroll > 200) {
-      $sideMenu.addClass('has-nav');
-    } else {
-      $sideMenu.removeClass('has-nav');
-    }
-
-    lastScroll = scroll;
-  });
+var initialSrc = "../../imgs/brand/twe_logotype_w_w_w_0.svg";
+var scrollSrc = "../../imgs/brand/twe_logotype_db_nr_db_0.svg";
+$(window).scroll(function() {
+   var value = $(this).scrollTop();
+   if (value > 200)
+      $(".logo").attr("src", scrollSrc);
+   else
+      $(".logo").attr("src", initialSrc);
+});
+$(function() {
+    var header = $("#menubut");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 200) {
+            header.removeClass('menu-btn').addClass("menu-btnb");
+        } else {
+            header.removeClass("menu-btnb").addClass('menu-btn');
+        }
+    });
 });
 </script>
 <script>
