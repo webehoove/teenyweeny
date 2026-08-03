@@ -170,7 +170,7 @@
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .wrapper_menu .title a {
-	background-color: rgba(43, 122, 176, 1);
+	background-color: var(--primary-nblue);
 	color: rgba(255, 255, 255, 1);
 	font-size: 1.35rem;
 	line-height: 2.2;
@@ -184,6 +184,9 @@
 }
 .wrapper_menu .title.color_bg_mb a {
 	background-color: var(--primary-mblue);
+}
+.wrapper_menu .title.color_bg_b a {
+	background-color: var(--primary-blue);
 }
 .wrapper_menu .title.color_bg_lb a {
 	background-color: var(--primary-lblue);
