@@ -8,7 +8,7 @@
  --primary-mblue: rgba(34, 86, 139, 1);
 }
 :root {
- --primary-nblue: rgba(66, 119, 191, 1);
+ --primary-nblue: rgba(55, 128, 188, 1);
 }
 :root {
  --primary-blue: rgba(42, 180, 245, 1);
@@ -53,7 +53,7 @@
  --primary-lorange: rgba(255, 200, 115, 1);
 }
 :root {
- --primary-aorange: rgba(255, 230, 210, 1);
+ --primary-aorange: rgba(255, 220, 197, 1);
 }
 :root {
  --primary-dgreen: rgba(16, 73, 40, 1);
@@ -104,7 +104,7 @@
  --primary-purple: rgba(193, 131, 252, 1);
 }
 :root {
- --primary-lpurple: rgba(204, 187, 255, 1);
+ --primary-lpurple: rgba(204, 177, 255, 1);
 }
 :root {
  --primary-apurple: rgba(230, 222, 252, 1);
@@ -378,7 +378,7 @@ body {
 	color: var(--primary-dblue);
 }
 body, input, select, textarea {
-	font-family: "TWE Md", Helvetica, sans-serif;
+	font-family: "TWE Db", Helvetica, sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -469,14 +469,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .rg_num {
 	font-family: 'TWE Num Rg', Helvetica, sans-serif;
+	letter-spacing: -0.065em;
 	font-feature-settings: "ss05" 1;
 }
 .bd_num {
 	font-family: 'TWE Num Bd', Helvetica, sans-serif;
+	letter-spacing: -0.065em;
 	font-feature-settings: "ss05" 1;
 }
 .blk_num {
 	font-family: 'TWE Num Blk', Helvetica, sans-serif;
+	letter-spacing: -0.065em;
 	font-feature-settings: "ss05" 1;
 }
 .text_and_play {
@@ -1642,12 +1645,17 @@ ul li {
 /* Side Menu */
 
 ul.side_menu {
+	background-color: var(--primary-tho);
 	display: inline-block;
+	margin: 0;
+	padding: 1rem;
+	width: auto;
+	border-radius: 1.8rem;
 }
 ul.side_menu li {
 	list-style: none;
 	display: table;
-	margin-bottom: 1.25rem;
+	margin: 1.2rem 0;
 }
 ul.side_menu li a {
 	color: var(--primary-dblue);

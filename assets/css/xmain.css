@@ -215,11 +215,11 @@ ul.goup li {
 }
  @media screen and (max-width: 768px) {
 #logotype_sym {
-	width: 9rem;
+	width: 8rem;
 	top: -0.1rem;
 }
 .logotype_lockup_b_d li.symbol_b {
-	width: 9rem;
+	width: 8rem;
 }
 ul.bottommenu {
 	padding-bottom: 2rem;
