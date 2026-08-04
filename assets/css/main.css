@@ -2,7 +2,7 @@
  --primary-bblue: rgba(11, 36, 76, 1);
 }
 :root {
- --primary-dblue: rgba(32, 60, 126, 1);
+ --primary-dblue: rgba(32, 56, 116, 1);
 }
 :root {
  --primary-mblue: rgba(34, 86, 139, 1);
@@ -101,7 +101,7 @@
  --primary-npurple: rgba(168, 93, 226, 1);
 }
 :root {
- --primary-purple: rgba(193, 131, 252, 1);
+ --primary-purple: rgba(190, 123, 255, 1);
 }
 :root {
  --primary-lpurple: rgba(204, 177, 255, 1);
@@ -375,7 +375,7 @@ html {
 }
 body {
 	background-color: var(--primary-thd);
-	color: var(--primary-bblue);
+	color: var(--primary-dblue);
 }
 body, input, select, textarea {
 	font-family: "TWE Md", Helvetica, sans-serif;
