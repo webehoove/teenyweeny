@@ -65,7 +65,7 @@
  --primary-ngreen: rgba(50, 173, 98, 1);
 }
 :root {
- --primary-green: rgba(85, 206, 134, 1);
+ --primary-green: rgba(56, 214, 120, 1);
 }
 :root {
  --primary-lgreen: rgba(128, 249, 177, 1);
@@ -83,7 +83,7 @@
  --primary-naqua: rgba(40, 165, 165, 1);
 }
 :root {
- --primary-aqua: rgba(84, 211, 208, 1);
+ --primary-aqua: rgba(3, 225, 217, 1);
 }
 :root {
  --primary-laqua: rgba(115, 244, 240, 1);
@@ -92,7 +92,7 @@
  --primary-aaqua: rgba(217, 250, 252, 1);
 }
 :root {
- --primary-dpurple: rgba(96, 31, 153, 1);
+ --primary-dpurple: rgba(96, 56, 153, 1);
 }
 :root {
  --primary-mpurple: rgba(121, 56, 178, 1);
@@ -511,6 +511,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .t_color_nr {
 	color: var(--primary-nred);
 }
+.t_color_r {
+	color: var(--primary-red);
+}
 .t_color_lr {
 	color: var(--primary-lred);
 }
@@ -519,6 +522,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .t_color_do {
 	color: var(--primary-dorange);
+}
+.t_color_mo {
+	color: var(--primary-morange);
 }
 .t_color_o {
 	color: var(--primary-orange);
@@ -789,7 +795,7 @@ h2 {
 	font-size: 2rem;
 	line-height: 1.2;
 }
-h2 {
+h2.special {
 	font-size: 3rem;
 	line-height: 1.1;
 }
@@ -2759,7 +2765,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	opacity: .8;
 }
 #wrapper > .invert hr, #wrapper > .invert hr.lineer_small, #wrapper > .invert hr.lineer_zero {
-	border-color: var(--primary-thd);
+	border-color: rgba(255, 255, 255, .5);
 }
 #wrapper > .invert ul.bottommenu {
 	border-color: rgba(255, 255, 255, .5);
