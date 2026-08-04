@@ -378,7 +378,7 @@ body {
 	color: var(--primary-dblue);
 }
 body, input, select, textarea {
-	font-family: "TWE Db", Helvetica, sans-serif;
+	font-family: "TWE Md", Helvetica, sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -525,6 +525,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .t_color_lg {
 	color: var(--primary-lgreen);
+}
+.t_color_ag {
+	color: var(--primary-agreen);
 }
 .t_color_dp {
 	color: var(--primary-dpurple);
@@ -982,7 +985,6 @@ a:active, a:visited:active {
 }
 .color_box_b {
 	background-color: var(--primary-blue);
-	color: rgba(255, 255, 255, 1);
 }
 .color_box_lb {
 	background-color: var(--primary-lblue);
@@ -1004,7 +1006,6 @@ a:active, a:visited:active {
 }
 .color_box_r {
 	background-color: var(--primary-red);
-	color: rgba(255, 255, 255, 1);
 }
 .color_box_lr {
 	background-color: var(--primary-lred);
@@ -1026,7 +1027,6 @@ a:active, a:visited:active {
 }
 .color_box_o {
 	background-color: var(--primary-orange);
-	color: rgba(255, 255, 255, 1);
 }
 .color_box_lo {
 	background-color: var(--primary-lorange);
@@ -1048,7 +1048,6 @@ a:active, a:visited:active {
 }
 .color_box_g {
 	background-color: var(--primary-green);
-	color: rgba(255, 255, 255, 1);
 }
 .color_box_lg {
 	background-color: var(--primary-lgreen);
@@ -1070,7 +1069,6 @@ a:active, a:visited:active {
 }
 .color_box_a {
 	background-color: var(--primary-aqua);
-	color: rgba(255, 255, 255, 1);
 }
 .color_box_la {
 	background-color: var(--primary-laqua);
@@ -1092,7 +1090,6 @@ a:active, a:visited:active {
 }
 .color_box_p {
 	background-color: var(--primary-purple);
-	color: rgba(255, 255, 255, 1);
 }
 .color_box_lp {
 	background-color: var(--primary-lpurple);
