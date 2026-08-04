@@ -124,7 +124,6 @@ ul.goup li {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
 }
 .dropbtn:hover {
 	background-image: url(../../imgs/icons/icon_arrow_down_drop_but_w.svg);

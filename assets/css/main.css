@@ -1,8 +1,8 @@
 :root {
- --primary-bblue: rgba(14, 45, 74, 1);
+ --primary-bblue: rgba(11, 36, 76, 1);
 }
 :root {
- --primary-dblue: rgba(32, 56, 100, 1);
+ --primary-dblue: rgba(32, 60, 126, 1);
 }
 :root {
  --primary-mblue: rgba(34, 86, 139, 1);
@@ -375,7 +375,7 @@ html {
 }
 body {
 	background-color: var(--primary-thd);
-	color: var(--primary-dblue);
+	color: var(--primary-bblue);
 }
 body, input, select, textarea {
 	font-family: "TWE Md", Helvetica, sans-serif;
@@ -842,8 +842,8 @@ a:active, a:visited:active {
 	align-items: center;
 }
 .text_link_icon li.a_right {
-	padding-left: 0.65rem;
 	padding-top: 0.25rem;
+	margin-left: 0.25rem;
 }
 .text_link_icon li.a_right img.r_icon {
 	width: 1.75rem;
@@ -859,6 +859,18 @@ a:active, a:visited:active {
 }
 .text_link_download li.a_left img.l_icon {
 	width: 2.75rem;
+}
+.text_link_download_s {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: auto;
+}
+.text_link_download_s li.a_left {
+	padding-right: 0.6rem;
+}
+.text_link_download_s li.a_left img.l_icon {
+	width: 2.3rem;
 }
  @media screen and (max-width: 736px) {
 .text_link_icon li.a_right img.r_icon {
