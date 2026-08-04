@@ -29,7 +29,7 @@
  --primary-nred: rgba(254, 64, 84, 1);
 }
 :root {
- --primary-red: rgba(255, 113, 131, 1);
+ --primary-red: rgba(255, 107, 134, 1);
 }
 :root {
  --primary-lred: rgba(255, 164, 188, 1);
@@ -997,6 +997,7 @@ a:active, a:visited:active {
 }
 .color_box_b {
 	background-color: var(--primary-blue);
+	color: rgba(255, 255, 255, 1);
 }
 .color_box_lb {
 	background-color: var(--primary-lblue);
@@ -1018,6 +1019,7 @@ a:active, a:visited:active {
 }
 .color_box_r {
 	background-color: var(--primary-red);
+	color: rgba(255, 255, 255, 1);
 }
 .color_box_lr {
 	background-color: var(--primary-lred);
@@ -1039,6 +1041,7 @@ a:active, a:visited:active {
 }
 .color_box_o {
 	background-color: var(--primary-orange);
+	color: rgba(255, 255, 255, 1);
 }
 .color_box_lo {
 	background-color: var(--primary-lorange);
@@ -1060,6 +1063,7 @@ a:active, a:visited:active {
 }
 .color_box_g {
 	background-color: var(--primary-green);
+	color: rgba(255, 255, 255, 1);
 }
 .color_box_lg {
 	background-color: var(--primary-lgreen);
@@ -1081,6 +1085,7 @@ a:active, a:visited:active {
 }
 .color_box_a {
 	background-color: var(--primary-aqua);
+	color: rgba(255, 255, 255, 1);
 }
 .color_box_la {
 	background-color: var(--primary-laqua);
@@ -1102,6 +1107,7 @@ a:active, a:visited:active {
 }
 .color_box_p {
 	background-color: var(--primary-purple);
+	color: rgba(255, 255, 255, 1);
 }
 .color_box_lp {
 	background-color: var(--primary-lpurple);
