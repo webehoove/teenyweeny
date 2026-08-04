@@ -45,26 +45,26 @@ video {
 	will-change: transform;
 }
 .side_menu {
-  width: 100%;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), top 0.3s ease, opacity 0.3s ease;
-  will-change: transform, top;
+	width: 100%;
+	transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), top 0.3s ease, opacity 0.3s ease;
+	will-change: transform, top;
 }
 .side_menu.is-fixed {
-  position: fixed;
-  top: 2rem; 
-  width: var(--sidebar-width, 300px);
-  animation: smoothArrival 0.35s ease-out forwards;
+	position: fixed;
+	top: 2rem;
+	width: var(--sidebar-width, 300px);
+	animation: smoothArrival 0.35s ease-out forwards;
 }
 .side_menu.is-bottom {
-  position: absolute;
-  bottom: 0;
-  top: auto;
-  width: 100%;
+	position: absolute;
+	bottom: 0;
+	top: auto;
+	width: 100%;
 }
 @media (max-width: 1180px) {
-  .side_menu.is-fixed.has-nav {
-    top: 9rem;
-  }
+.side_menu.is-fixed.has-nav {
+	top: 9rem;
+}
 }
 </style>
 </head><body class="is-preload">
@@ -223,21 +223,16 @@ video {
           <p>Наши самые знаковые цвета &#8212; синий <span class="bd_tt">TWE Blue</span> и красный <span class="bd_tt">TWE Red</span>. Темно-синий используется в основном тексте и служит фоном для большей части бренда. В сочетании с красным и ведущими цветами, он укрепляет устоявшийся имидж бренда и создает динамичную и узнаваемую комбинацию.</p>
           <hr class="mini">
           <p>Вместе с яркими, энергичными оранжевым, фиолетовым, зеленым акцентом и гармоничной палитрой нейтральных и информационных цветов мы создаем широкую, но четко определенную цветовую палитру, подходящую для самых разных задач.</p>
-          <hr class="block1">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-2 off-12-small">
-          <hr class="block1">
+          <hr class="mini">
+          <p>Для обозначения цветов бренда используется абревиатура <span class="bd_tt">TWE</span>, заглавные буквы оттенка цвета <span class="bd_tt">D</span> (Dark) и названия цвета <span class="bd_tt">B</span> (Blue).</p>
+          <hr class="block2">
         </div>
       </div>
       
       <!-- BLUE -->
       
       <div class="row">
-        <div class="col-2 off-12-small">
-          <hr class="block1">
-        </div>
+        <div class="col-2 off-12-small"> </div>
         <div class="col-10 col-12-small">
           <h3 class="bd_tt">TWE Blue &#8212; Синий</h3>
           <hr>
@@ -1807,7 +1802,6 @@ video {
             <p class="xbd_tt t_color_dp">TWE DP</p>
             <h1 style="margin-top:0.75rem; letter-spacing:-0.2rem;" class="special_num blk_num t_color_dp">№123</h1>
             <hr class="block1">
-            
             <p class="xbd_tt t_color_do">TWE DO</p>
             <h3 style="margin-top:0.75rem;" class="xbd_tx t_color_do">Влюбляем в английский язык с первого занятия.</h3>
           </div>
@@ -1828,7 +1822,6 @@ video {
             <p class="xbd_tt t_color_db">TWE DB</p>
             <h1 style="margin-top:0.75rem; letter-spacing:-0.2rem;" class="special_num blk_num t_color_db"><script>document.write(Date().split(' ')[3])</script></h1>
             <hr class="block1">
-            
             <p class="xbd_tt t_color_dr">TWE DR</p>
             <h3 style="margin-top:0.75rem;" class="xbd_tx t_color_dr">Влюбляем в английский язык с первого занятия.</h3>
           </div>
@@ -2067,7 +2060,7 @@ $(function() {
     lastScroll = scroll;
   });
 });
-</script>
+</script> 
 <script>
   function setResponsiveVideo() {
     const source = document.getElementById('videoSource');
