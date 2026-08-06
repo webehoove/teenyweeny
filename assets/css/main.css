@@ -225,25 +225,18 @@
 	font-style: normal;
 	src: url(../webfonts/twe_text_and_play/TWE-T-A-P.woff) format('woff');
 }
-/*___________AnimationText______________*/
-.animate-text-on-load {
-	opacity: 0;
-	transform: translateY(20px);
-	animation: none;
+/*___________Script______________*/
+@font-face {
+	font-family: 'TWE Script Rg';
+	font-weight: normal;
+	font-style: normal;
+	src: url(../webfonts/twe_script_text/TWE-Script-Regular.woff2) format('woff2'), url(../webfonts/twe_script_text/TWE-Script-Regular.woff) format('woff');
 }
-.animate-text-on-load.font-is-ready {
-	font-family: 'TWE T XBb', sans-serif;
-	animation: fadeInUp 0.6s ease-out forwards;
-}
-@keyframes fadeInUp {
- from {
- opacity: 0;
- transform: translateY(20px);
-}
-to {
-	opacity: 1;
-	transform: translateY(0);
-}
+@font-face {
+	font-family: 'TWE Script SBd';
+	font-weight: normal;
+	font-style: normal;
+	src: url(../webfonts/twe_script_text/TWE-Script-SemiBold.woff2) format('woff2'), url(../webfonts/twe_script_text/TWE-Script-SemiBold.woff) format('woff');
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -439,7 +432,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .blk_tt {
 	font-family: 'TWE T Blk', Helvetica, sans-serif;
 	font-weight: normal;
-	letter-spacing: -0.03em;
+	letter-spacing: -0.035em;
 	font-feature-settings: "ss01" 1, "ss08" 1;
 }
 .lt_tx {
@@ -484,6 +477,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .text_and_play {
 	font-family: 'TWE Text and Play', Helvetica, sans-serif;
+}
+.rg_script{
+	font-family: 'TWE Script Rg', Helvetica, sans-serif;
+	font-weight: normal;
+}
+.sbd_script {
+	font-family: 'TWE Script SBd', Helvetica, sans-serif;
+	letter-spacing: -0.035em;
+	line-height: 1;
 }
 /* Text Color */
 
@@ -617,21 +619,25 @@ h2 {
 	font-size: 3.45rem;
 	line-height: 1;
 }
+h2.special {
+	font-size: 3.45rem;
+	line-height: 1;
+}
 h3 {
 	font-size: 2.25rem;
 	line-height: 1;
 }
 h4 {
 	font-size: 1.5rem;
-	line-height: 1.2;
+	line-height: 1.1;
 }
 h5 {
 	font-size: 1.35rem;
-	line-height: 1.2;
+	line-height: 1.1;
 }
 h6 {
 	font-size: 1rem;
-	line-height: 1.2;
+	line-height: 1.1;
 }
 sub {
 	font-size: 0.8rem;
@@ -698,6 +704,14 @@ hr.lineer {
 hr.lineer_small {
 	border-bottom: 2px solid var(--primary-blue);
 	margin: 1rem 0;
+}
+hr.lineer_block {
+	border-bottom: 2px solid var(--primary-blue);
+	margin: 2rem 0 0 0;
+}
+hr.lineer_zero {
+	border-bottom: 2px solid var(--primary-blue);
+	margin: 0;
 }
 .align-left {
 	text-align: left;
@@ -793,11 +807,11 @@ h1.special_shift {
 }
 h2 {
 	font-size: 2rem;
-	line-height: 1.2;
+	line-height: 1;
 }
 h2.special {
 	font-size: 3rem;
-	line-height: 1.1;
+	line-height: 1;
 }
 h3 {
 	font-size: 1.5rem;
@@ -1338,14 +1352,14 @@ button.large_a_npurple, .button.large_a_npurple {
 }
 button.large_a_npurple::after, .button.large_a_npurple::after {
 	content: '';
+	background-image: url(../../imgs/icons/icon_arrow_right_but_purple_hover.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Matches base button arrow alignment */
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../../imgs/icons/icon_arrow_right_but_purple_hover.svg);
-	background-repeat: no-repeat;
-	background-position: right center; /* Matches base button arrow alignment */
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
@@ -1354,50 +1368,51 @@ button.large_a_npurple:hover::after, .button.large_a_npurple:hover::after {
 	opacity: 1;
 }
 button.medium, .button.medium {
-	font-size: 1.15rem;
-	height: 3.5rem;
+	font-size: 1rem;
+	width: auto;
+	height: 3.25rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: auto;
-	border-radius: 1.2rem;
-	padding: 0 1.25rem;
+	padding: 0 1.5rem;
 	text-align: center;
+	border-radius: 1rem;
 }
 button.medium:hover, .button.medium:hover {
 	border-radius: 1.75rem;
 }
-button.medium_a, .button.medium_a {
+button.medium_d, .button.medium_d {
 	background-image: url(../../imgs/icons/icon_download_right_but_db_w.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
 	position: relative;
-	font-size: 1.15rem;
 	width: auto;
-	height: 3.5rem;
+	height: 3.25rem;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	border-radius: 1.2rem;
 	padding: 0 4.5rem 0 1.25rem;
 	z-index: 1;
 	overflow: hidden;
 }
-button.medium_a::after, .button.medium_a::after {
+button.medium_d::after, .button.medium_d::after {
 	content: '';
+	background-image: url(../../imgs/icons/icon_download_right_but_db_w_hover.svg);
+	background-repeat: no-repeat;
+	background-position: right center; /* Matches base button arrow alignment */
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../../imgs/icons/icon_download_right_but_db_w.svg);
-	background-repeat: no-repeat;
-	background-position: right center; /* Matches base button arrow alignment */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.1s ease-in-out;
 	z-index: -1;
 }
-button.medium_a:hover::after, .button.medium_a:hover::after {
+button.medium_d:hover::after, .button.medium_d:hover::after {
 	opacity: 1;
 }
 button.medium.dropmenu, .button.medium.dropmenu {
@@ -1430,18 +1445,6 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, button:active, .button:active {
 	background-color: var(--primary-nblue);
 }
-primary, button.a_blue, .button.a_blue {
-	background-color: var(--primary-blue);
-	color: rgba(255, 255, 255, 1) !important;
-}
-button.a_blue:hover, .button.a_blue:hover {
-	background-color: var(--primary-dblue);
-	color: rgba(255, 255, 255, 1) !important;
-}
-button.a_blue:active, .button.a_blue:active {
-	background-color: var(--primary-blue);
-	color: rgba(255, 255, 255, 1) !important;
-}
 button.secondary, .button.secondary {
 	background-color: var(--primary-dblue);
 	color: rgba(255, 255, 255, 1) !important;
@@ -1452,65 +1455,66 @@ button.secondary:hover, .button.secondary:hover {
 button.secondary:active, .button.secondary:active {
 	background-color: var(--primary-dblue);
 }
-button.a_dblue, .button.a_dblue {
+button.dblue, .button.dblue {
 	background-color: var(--primary-dblue);
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.a_dblue:hover, .button.a_dblue:hover {
-	background-color: var(--primary-mblue) !important;
-	color: rgba(255, 255, 255, 1) !important;
-}
-button.a_dblue:active, .button.a_dblue:active {
-	background-color: var(--primary-dblue);
-}
-button.a_lblue, .button.a_lblue {
-	background-color: var(--primary-lblue);
-	color: var(--primary-dblue) !important;
-}
-button.a_lblue:hover, .button.a_lblue:hover {
+button.dblue:hover, .button.dblue:hover {
 	background-color: var(--primary-dblue) !important;
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.a_ablue:active, .button.a_ablue:active {
+button.dblue:active, .button.dblue:active {
+	background-color: var(--primary-dblue);
+}
+button.blue, .button.blue {
+	background-color: var(--primary-blue);
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.blue:hover, .button.blue:hover {
+	background-color: var(--primary-dblue);
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.blue:active, .button.blue:active {
+	background-color: var(--primary-blue);
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.lblue, .button.lblue {
 	background-color: var(--primary-lblue);
 	color: var(--primary-dblue) !important;
 }
-button.a_ablue, .button.a_ablue {
+button.lblue:hover, .button.lblue:hover {
+	background-color: var(--primary-dblue) !important;
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.ablue, .button.ablue {
 	background-color: var(--primary-ablue);
 	color: var(--primary-dblue) !important;
 }
-button.a_ablue:hover, .button.a_ablue:hover {
+button.ablue:hover, .button.ablue:hover {
 	color: var(--primary-dblue) !important;
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.a_ablue:active, .button.a_ablue:active {
+button.ablue:active, .button.ablue:active {
 	background-color: var(--primary-ablue);
 	color: var(--primary-dblue) !important;
-}
-button.thd_red, .button.thd_red {
-	background-color: var(--primary-thd);
-	color: var(--primary-dblue) !important;
-}
-button.thd_red:hover, .button.thd_red:hover {
-	background-color: var(--primary-dred);
-	color: rgba(255, 255, 255, 1) !important;
-}
-button.thd_red:active, .button.thd_red:active {
-	background-color: var(--primary-dred);
 }
 button.nred, .button.nred {
 	background-color: var(--primary-nred);
 	color: var(--primary-w) !important;
 }
 button.nred:hover, .button.nred:hover {
-	background-color: var(--primary-nred);
+	background-color: var(--primary-mred);
 	color: var(--primary-w) !important;
 }
-button.lred:active, .button.lred:active {
+button.nred:active, .button.nred:active {
+	background-color: var(--primary-nred);
+}
+button.lnred, .button.lnred {
 	background-color: var(--primary-lred);
+	color: var(--primary-w) !important;
 }
 button.lred:hover, .button.lred:hover {
-	background-color: var(--primary-lred);
+	background-color: var(--primary-red);
 	color: var(--primary-dblue) !important;
 }
 button.lred:active, .button.lred:active {
@@ -1527,15 +1531,15 @@ button.npurple:hover, .button.npurple:hover {
 button.npurple:active, .button.npurple:active {
 	background-color: var(--primary-npurple);
 }
-button.a_apurple, .button.a_apurple {
+button.apurple, .button.apurple {
 	background-color: var(--primary-apurple);
 	color: var(--primary-dblue) !important;
 }
-button.a_apurple:hover, .button.a_apurple:hover {
+button.apurple:hover, .button.apurple:hover {
 	background-color: var(--primary-dpurple);
 	color: rgba(255, 255, 255, 1) !important;
 }
-button.a_apurple:active, .button.a_apurple:active {
+button.apurple:active, .button.apurple:active {
 	background-color: var(--primary-apurple);
 }
 button.w, .button.w {
@@ -1613,9 +1617,20 @@ button.small, .button.small {
 .image.shift_right {
 	padding-right: 1rem;
 }
+.image.half {
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+.image.half img {
+	width: 50%
+}
  @media screen and (max-width: 736px) {
 .image.shift_right {
 	padding-right: 0;
+}
+.image.half img {
+	width: 100%
 }
 }
 /* List */
@@ -1652,6 +1667,18 @@ ul.t_list li {
 	display: inline-block;
 	padding-left: 2.5rem;
 	margin-bottom: 1.5rem;
+}
+ul.t_list.check li {
+	background-image: url(../../imgs/icons/icon_check_text_ng.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 1.7rem;
+}
+ul.t_list.warning li {
+	background-image: url(../../imgs/icons/icon_warning_text_nb.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 1.7rem;
 }
  @media screen and (max-width: 736px) {
 ul li {
@@ -2288,7 +2315,8 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	height: 75svh;
 }
 .banner.style1 .content .text_center img {
-	height: 10svh;
+	width: 95%;
+	height: auto;
 }
 .banner.style1 .content .block_bottom {
 	bottom: 1rem;
@@ -2809,6 +2837,12 @@ body.is-preload .banner.onload-image-fade-in .image img {
 }
 #wrapper > .color_tho {
 	background-color: var(--primary-tho);
+}
+#wrapper > .color_thd {
+	background-color: var(--primary-thd);
+}
+#wrapper > .color_thb {
+	background-color: var(--primary-thb);
 }
 #wrapper > .color_db {
 	background-color: var(--primary-dblue);
