@@ -1301,7 +1301,7 @@ button.large_a::after, .button.large_a::after {
 button.large_a:hover::after, .button.large_a:hover::after {
 	opacity: 1;
 }
-button.large_a_red, .button.large_a_red {
+button.large_a_dred, .button.large_a_dred {
 	background-image: url(../../imgs/icons/icon_arrow_right_but_red.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
@@ -1317,7 +1317,7 @@ button.large_a_red, .button.large_a_red {
 	z-index: 1;
 	overflow: hidden;
 }
-button.large_a_red::after, .button.large_a_red::after {
+button.large_a_dred::after, .button.large_a_dred::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -1331,7 +1331,7 @@ button.large_a_red::after, .button.large_a_red::after {
 	transition: opacity 0.3s ease-in-out;
 	z-index: -1;
 }
-button.large_a_red:hover::after, .button.large_a_red:hover::after {
+button.large_a_dred:hover::after, .button.large_a_dred:hover::after {
 	opacity: 1;
 }
 button.large_a_npurple, .button.large_a_npurple {
@@ -1509,13 +1509,23 @@ button.nred:hover, .button.nred:hover {
 button.nred:active, .button.nred:active {
 	background-color: var(--primary-nred);
 }
-button.lnred, .button.lnred {
-	background-color: var(--primary-lred);
+button.dred, .button.dred {
+	background-color: var(--primary-dred);
 	color: var(--primary-w) !important;
 }
+button.dred:hover, .button.dred:hover {
+	background-color: var(--primary-w);
+	color: var(--primary-dred) !important;
+}
+button.dred:active, .button.dred:active {
+	background-color: var(--primary-dred);
+}
+button.lred, .button.lred {
+	background-color: var(--primary-lred);
+	color: var(--primary-dred) !important;
+}
 button.lred:hover, .button.lred:hover {
-	background-color: var(--primary-red);
-	color: var(--primary-dblue) !important;
+	background-color: var(--primary-w);
 }
 button.lred:active, .button.lred:active {
 	background-color: var(--primary-lred);
