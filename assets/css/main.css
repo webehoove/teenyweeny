@@ -367,7 +367,7 @@ html {
 }
 }
 body {
-	background-color: var(--primary-thd);
+	background-color: var(--primary-w);
 	color: var(--primary-dblue);
 }
 body, input, select, textarea {
@@ -1548,6 +1548,17 @@ button.lred:hover, .button.lred:hover {
 }
 button.lred:active, .button.lred:active {
 	background-color: var(--primary-lred);
+}
+button.dpurple, .button.dpurple {
+	background-color: var(--primary-dpurple);
+	color: rgba(255, 255, 255, 1) !important;
+}
+button.dpurple:hover, .button.dpurple:hover {
+	background-color: var(--primary-w);
+	color: var(--primary-dpurple) !important;
+}
+button.dpurple:active, .button.dpurple:active {
+	background-color: var(--primary-dpurple);
 }
 button.npurple, .button.npurple {
 	background-color: var(--primary-npurple);
