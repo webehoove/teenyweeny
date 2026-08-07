@@ -1522,10 +1522,11 @@ button.dred:active, .button.dred:active {
 }
 button.lred, .button.lred {
 	background-color: var(--primary-lred);
-	color: var(--primary-dred) !important;
+	color: var(--primary-w) !important;
 }
 button.lred:hover, .button.lred:hover {
 	background-color: var(--primary-w);
+	color: var(--primary-dblue) !important;
 }
 button.lred:active, .button.lred:active {
 	background-color: var(--primary-lred);
@@ -1568,7 +1569,7 @@ button.large, .button.large, .button.large_a_red, .button.large_a_npurple {
     font-size: 1.45rem;
 	padding: 0 1.3rem;
 }
-button.large_a, .button.large_a, .button.large_a_red, .button.large_a_npurple {
+button.large_a, .button.large_a, .button.large_a_dred, .button.large_a_npurple {
 	width: 100%;
 }
 button.small, .button.small {
