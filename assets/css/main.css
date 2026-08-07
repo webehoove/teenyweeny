@@ -3009,6 +3009,9 @@ body.is-preload .banner.onload-image-fade-in .image img {
 #wrapper > .color_ar {
 	background-color: var(--primary-ared);
 }
+#wrapper > .color_dp {
+	background-color: var(--primary-dpurple);
+}
 #wrapper > .color_lp {
 	background-color: var(--primary-lpurple);
 }
