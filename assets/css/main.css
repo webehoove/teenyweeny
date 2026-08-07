@@ -932,7 +932,7 @@ a:active, a:visited:active {
 	width: 100%;
 	aspect-ratio: 1 / 1;
 	border: none;
-	border-radius: 2.25rem;
+	border-radius: 4rem;
 	z-index: 1;
 }
 .box_banner.content {
@@ -969,7 +969,19 @@ a:active, a:visited:active {
 	padding: 2rem 1.5rem;
 	width: 100%;
 	border: none;
-	border-radius: 2.25rem;
+	border-radius: 4rem;
+}
+.box_text_xl {
+	overflow: hidden;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	position: relative;
+	background-color: inherit;
+	margin: 0;
+	padding: 3.5rem 3rem 8rem 3rem;
+	width: 100%;
+	border: none;
+	border-radius: 4rem
 }
 .box_text.box_shadow {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .01), 0 6px 20px 0 rgba(0, 0, 0, .01);
@@ -988,6 +1000,7 @@ a:active, a:visited:active {
 .box_grid {
 	display: flex;
 	gap: 0;
+	border-radius: 4rem;
 }
 .box_grid .block {
 	display: flex;
@@ -1188,6 +1201,10 @@ ul.box_link_w li a:hover {
  @media screen and (max-width: 820px) {
 }
  @media screen and (max-width: 768px) {
+.box_text_xl {
+	padding: 2.5rem 1.5rem 3.5rem 1.5rem;
+	border-radius: 2.5rem;
+}
 .box_grid {
 	display: block;
 }
@@ -1269,7 +1286,7 @@ button.large, .button.large {
 	text-align: center;
 }
 button.large_a, .button.large_a {
-	background-image: url(../../imgs/icons/icon_arrow_right_but_nb_tho.svg);
+	background-image: url(../../imgs/icons/icon_arrow_right_but_nb_w.svg);
 	background-repeat: no-repeat;
 	background-position: right center; /* Adjusted position so arrow doesn't stick to edge */
 	position: relative;
@@ -1427,6 +1444,7 @@ button.small, .button.small {
 	width: auto;
 	border-radius: 1rem;
 	padding: 0 1.25rem;
+	margin-bottom: 0.35rem;
 	text-align: center;
 }
 button.small:hover, .button.small:hover {
@@ -1587,10 +1605,7 @@ button.small, .button.small {
 .image img {
 	display: block;
 }
-.rounded img {
-	border-radius: 4rem;
-}
-.rounded video {
+.rounded img, .rounded video {
 	border-radius: 4rem;
 }
 .image video {
@@ -1636,12 +1651,15 @@ button.small, .button.small {
 .image.half img {
 	width: 50%
 }
- @media screen and (max-width: 736px) {
+ @media screen and (max-width: 768px) {
 .image.shift_right {
 	padding-right: 0;
 }
 .image.half img {
 	width: 100%
+}
+.rounded img, .rounded video {
+	border-radius: 2.5rem;
 }
 }
 /* List */
