@@ -185,6 +185,9 @@
 .wrapper_menu .title.color_bg_mb a {
 	background-color: var(--primary-mblue);
 }
+.wrapper_menu .title.color_bg_nb a {
+	background-color: var(--primary-nblue);
+}
 .wrapper_menu .title.color_bg_b a {
 	background-color: var(--primary-blue);
 }

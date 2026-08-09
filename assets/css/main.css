@@ -974,7 +974,7 @@ ul.t_and_p {
 }
  @media screen and (max-width: 736px) {
 ul.t_and_p {
-	gap: 0.25rem;
+	gap: 0.35rem;
 	width: 90%;
 }
 ul.t_and_p li img {
@@ -1062,6 +1062,17 @@ ul.t_and_p li p {
 }
 .box_text .icons_s img {
 	height: 4rem;
+}
+.box_text_warning {
+	overflow: hidden;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	position: relative;
+	background-color: inherit;
+	margin: 0;
+	padding: 1.5rem;
+	width: 100%;
+	border-radius: 1.8rem;
 }
 .no_rounded {
 	border-radius: 0;
@@ -1777,7 +1788,7 @@ ul {
 }
 ul li {
 	display: inline-block;
-	padding-right: 0.15rem;
+	padding-right: 0.25rem;
 }
 ul.t_list {
 	list-style: none;
@@ -1793,7 +1804,6 @@ ul.t_list li {
 	line-height: 1.15;
 	display: inline-block;
 	padding-left: 2.5rem;
-	margin-bottom: 1.5rem;
 }
 ul.t_list.check li {
 	background-image: url(../../imgs/icons/icon_check_text_ng.svg);
