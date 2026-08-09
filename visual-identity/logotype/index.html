@@ -232,25 +232,29 @@ video {
         <div class="col-2 off-12-small">
           <hr class="block1">
         </div>
-        <div class="col-10 col-12-small"> 
-    <div class="image fit">
-      <video autoplay loop muted playsinline>
-        <source id="videoSource" src="videos/twe_logotype_built.mp4" type="video/mp4">
-      </video>
-    </div>
+        <div class="col-10 col-12-small">
+          <div class="image fit">
+            <video id="introVideo" autoplay loop muted playsinline class="responsive-video mobile-only">
+              <source id="videoSource" src="videos/twe_logotype_built_mob.mp4" type="video/mp4">
+            </video>
+            <video id="introVideo" autoplay loop muted playsinline poster="imgs/twe_text_and_play_go.png" class="responsive-video desktop-only">
+              <source id="videoSource" src="videos/twe_logotype_built.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="col-2 off-12-small">
           <hr class="block1">
         </div>
-        <div class="col-5 col-12-small"> <span class="image fit"><img src="imgs/twe_logotype_eng_construction.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></span>
-        </div>
+        <div class="col-5 col-12-small"> <span class="image fit"><img src="imgs/twe_logotype_eng_construction.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></span> </div>
         <div class="col-5 col-12-small"> <span class="image fit"><img src="imgs/twe_logotype_ru_construction.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></span>
           <hr class="block1">
-          <ul class="t_list rg_tx">
-            <li>В английской версии, особенно в тесных границах, важно учесть компенсацию и перелет буквы <span class="bd_tt">W</span> по левой границе и предусмотреть отступ равный овершуту заложенному в шрифте.</li>
-          </ul>
+          <div class="box_text_warning color_box_tho">
+            <ul class="t_list rg_tx">
+              <li>В английской версии, особенно в тесных границах, важно учесть компенсацию и перелет буквы <span class="bd_tt">W</span> по левой границе и предусмотреть отступ равный овершуту заложенному в шрифте.</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -278,9 +282,11 @@ video {
           <hr class="mini">
           <p>В случаях, когда фон темный или логотип расположен на изображении и видео, он изменяется на белый. С цветными фонами, для поддержания концепции оживленного стиля, используются цвета с подчинением общим правилам совмещения цветов бренда.</p>
           <hr class="block1">
-          <ul class="t_list rg_tx">
-            <li>Эти версии имеют центральное выравнивание и не подходят для создания иконок и аватарок в форме круга. Для этих целей используйте макеты в разделе <span class="xbd_tt"><a href="#color_3" class="smooth-scroll">Иконки и аватарки</a></span>.</li>
-          </ul>
+          <div class="box_text_warning color_box_tho">
+            <ul class="t_list rg_tx">
+              <li>Эти версии имеют центральное выравнивание и не подходят для создания иконок и аватарок в форме круга. Для этих целей используйте макеты в разделе <span class="xbd_tt"><a href="#color_3" class="smooth-scroll">Иконки и аватарки</a></span>.</li>
+            </ul>
+          </div>
           <hr class="block2">
         </div>
       </div>
@@ -550,12 +556,13 @@ video {
           <hr>
           <span class="image fit"><img src="imgs/twe_logotype_ru_title_consruction.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></span>
           <hr class="block1">
-          <ul class="t_list warning rg_tx">
-            <li>При горизонтальном выравнивании по центру подпись должна иметь отступ и настроена с учетом оптического искажения.</li>
-          </ul>
+          <div class="box_text_warning color_box_tho">
+            <ul class="t_list warning rg_tx">
+              <li>При горизонтальном выравнивании по центру подпись должна иметь отступ и настроена с учетом оптического искажения.</li>
+            </ul>
+          </div>
         </div>
       </div>
-      
       <div class="row">
         <div class="col-2 off-12-small"> </div>
         <div class="col-10 col-12-small">
@@ -628,7 +635,7 @@ video {
       <div class="row">
         <div class="col-2 off-12-small"> </div>
         <div class="col-5 col-12-small">
-        <hr class="block2">
+          <hr class="block2">
           <h3 class="bd_tt">Английская версия с дескриптором</h3>
           <hr class="mini">
         </div>
@@ -797,13 +804,19 @@ video {
         <div class="col-2 off-12-small">
           <hr class="block1">
         </div>
-        <div class="col-5 col-12-small"> <span class="image fit"><img src="imgs/twe_logotype_eng_clearspace.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></span>
-        </div>
+        <div class="col-5 col-12-small"> <span class="image fit"><img src="imgs/twe_logotype_eng_clearspace.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></span> </div>
         <div class="col-5 col-12-small"> <span class="image fit"><img src="imgs/twe_logotype_ru_clearspace.svg" onContextMenu="return false;" alt="Teeny Weeny English" /></span>
-          <hr class="block1">
-          <ul class="t_list check block_shift_right rg_tx">
-            <li>В исключительных случаях свободное пространство может быть скорректировано для обеспечения максимального визуального эффекта.</li>
-          </ul>
+          <hr class="mini">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 off-12-small"> </div>
+        <div class="col-4 col-12-small">
+          <div class="box_text_warning color_box_tho">
+            <ul class="t_list check rg_tx">
+              <li>В исключительных случаях свободное пространство может быть скорректировано для обеспечения максимального визуального эффекта.</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -858,9 +871,11 @@ video {
           <hr>
           <span class="image half"><img src="imgs/twe_logotype_eng_positions_in_radius.png" onContextMenu="return false;" alt="Teeny Weeny English" /></span>
           <hr class="block1">
-          <ul class="t_list warning rg_tx">
-            <li>При использовании подложки для логотипа важно соблюдать правила установки радиуса закругления, так чтобы внутренния радиус был меньше наружного.</li>
-          </ul>
+          <div class="box_text_warning color_box_tho">
+            <ul class="t_list warning rg_tx">
+              <li>При использовании подложки для логотипа важно соблюдать правила установки радиуса закругления, так чтобы внутренния радиус был меньше наружного.</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -870,7 +885,8 @@ video {
           <hr class="lineer">
         </div>
       </div>
-      </div></section>
+    </div>
+  </section>
   
   <!-- END -->
   
